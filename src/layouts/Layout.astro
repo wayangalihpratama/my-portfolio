@@ -1,6 +1,9 @@
 ---
+// src/layouts/Layout.astro
 import MobileMenu from "../components/MobileMenu.jsx";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
+
 const { title } = Astro.props;
 
 const menuItems = [
@@ -15,6 +18,10 @@ const menuItems = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Wayan Galih Pratama - Fullstack Developer specializing in modern web applications, RAG development, and AI integration."
+    />
     <title>{title}</title>
     <link
       rel="icon"
@@ -24,12 +31,10 @@ const menuItems = [
 
     <!-- Inline script to prevent flash of wrong theme -->
     <script is:inline>
-      // This runs immediately before the page renders
       const theme = localStorage.getItem("theme");
       const systemPrefersDark = window.matchMedia(
         "(prefers-color-scheme: dark)"
       ).matches;
-
       if (theme === "dark" || (!theme && systemPrefersDark)) {
         document.documentElement.classList.add("dark");
       } else {
@@ -37,10 +42,35 @@ const menuItems = [
       }
     </script>
   </head>
-  <body class="bg-white dark:bg-gray-900">
+  <body class="bg-white dark:bg-gray-900 transition-colors duration-300">
+    <!-- Navigation -->
     <MobileMenu menuItems={menuItems} client:load />
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <!-- Main Content -->
+    <main>
       <slot />
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <Footer />
+
+    <!-- Smooth scroll behavior -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          if (href === "#") return;
+
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

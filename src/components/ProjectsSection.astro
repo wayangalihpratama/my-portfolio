@@ -2,34 +2,55 @@
 // src/components/ProjectsSection.astro
 const projects = [
   {
-    name: "Project Name 1",
+    name: "RAG Knowledge System",
     description:
-      "A brief description of your amazing web application. Highlight key features and the problem it solves.",
-    tags: ["React", "Tailwind CSS", "Node.js"],
+      "Intelligent retrieval-augmented generation system that bridges vast knowledge bases with contextual AI responses. Built with modern LLM integration.",
+    tags: ["Python", "LangChain", "Vector DB", "RAG"],
     link: "#",
+    featured: true,
+    color: "red",
   },
   {
-    name: "Project Name 2",
+    name: "Akvo Platform Features",
     description:
-      "A complex backend service built with clean architecture. Describe the technical challenge you overcame.",
-    tags: ["Node.js", "Express", "PostgreSQL"],
+      "Contributing to global water and sanitation data platform, building features that help organizations make data-driven decisions.",
+    tags: ["React", "Node.js", "PostgreSQL"],
     link: "#",
+    featured: true,
+    color: "blue",
   },
   {
-    name: "Project Name 3 (Astro Blog)",
+    name: "Modern Web Dashboard",
     description:
-      "A high-speed content site built purely with Astro for maximum performance and SEO score.",
-    tags: ["Astro", "MDX", "Tailwind CSS"],
+      "High-performance analytics dashboard with real-time data visualization and responsive design for maximum user experience.",
+    tags: ["Astro", "React", "Tailwind CSS"],
     link: "#",
+    featured: false,
+    color: "green",
   },
 ];
 ---
 
-<section id="projects" class="py-24 sm:py-32 dark:bg-gray-900">
-  <div>
+<section id="projects" class="relative py-24 sm:py-32 dark:bg-gray-900">
+  <!-- Background decoration - Blue and Green gradient -->
+  <div class="absolute inset-0 -z-10 overflow-hidden">
+    <div
+      class="absolute left-1/2 top-0 -translate-x-1/2 blur-3xl opacity-30"
+      aria-hidden="true"
+    >
+      <div
+        class="aspect-[1318/752] w-[82.375rem] bg-gradient-to-r from-blue-600 to-green-600"
+        style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
+      >
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <!-- Section Header -->
     <div class="mx-auto max-w-2xl lg:text-center">
       <h2
-        class="text-base font-semibold leading-7 text-indigo-600 dark:text-indigo-400"
+        class="text-base font-semibold leading-7 text-green-700 dark:text-green-400"
       >
         My Work
       </h2>
@@ -38,34 +59,98 @@ const projects = [
       >
         Featured Projects
       </p>
+      <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
+        A selection of projects I've worked on, from RAG systems to full-stack
+        web applications.
+      </p>
     </div>
+
+    <!-- Projects Grid -->
     <div
-      class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+      class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
     >
       {
         projects.map((project) => (
-          <article class="flex flex-col items-start justify-between p-6 rounded-xl shadow-lg bg-gray-50 dark:bg-gray-800 transition hover:shadow-2xl">
-            <div class="group relative">
-              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
-                <a href={project.link}>
-                  <span class="absolute inset-0" />
-                  {project.name}
-                </a>
-              </h3>
-              <p class="mt-5 text-sm leading-6 text-gray-600 dark:text-gray-400">
-                {project.description}
-              </p>
-            </div>
-            <div class="mt-6 flex flex-wrap items-center gap-y-2 gap-x-2">
-              {project.tags.map((tag) => (
-                <span class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200">
-                  {tag}
+          <article class="relative flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-gray-800 shadow-lg ring-1 ring-gray-200 dark:ring-gray-700 transition-all hover:shadow-2xl hover:scale-105 hover:-translate-y-1">
+            {/* Featured Badge - Red for featured */}
+            {project.featured && (
+              <div class="absolute top-4 right-4 z-10">
+                <span class="inline-flex items-center rounded-full bg-red-600 px-3 py-1 text-xs font-semibold text-white shadow-lg">
+                  ⭐ Featured
                 </span>
-              ))}
+              </div>
+            )}
+
+            {/* Color accent bar at top */}
+            <div
+              class={`h-2 ${
+                project.color === "red"
+                  ? "bg-gradient-to-r from-red-500 to-red-600"
+                  : project.color === "blue"
+                    ? "bg-gradient-to-r from-blue-500 to-blue-600"
+                    : "bg-gradient-to-r from-green-500 to-green-600"
+              }`}
+            />
+
+            {/* Project Content */}
+            <div class="flex flex-col p-8 flex-1">
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold leading-7 text-gray-900 dark:text-white">
+                  <a
+                    href={project.link}
+                    class={`transition-colors ${
+                      project.color === "red"
+                        ? "hover:text-red-600 dark:hover:text-red-400"
+                        : project.color === "blue"
+                          ? "hover:text-blue-600 dark:hover:text-blue-400"
+                          : "hover:text-green-600 dark:hover:text-green-400"
+                    }`}
+                  >
+                    <span class="absolute inset-0" aria-hidden="true" />
+                    {project.name}
+                  </a>
+                </h3>
+                <p class="mt-4 text-base leading-7 text-gray-600 dark:text-gray-400">
+                  {project.description}
+                </p>
+              </div>
+
+              {/* Tags - Using different colors */}
+              <div class="mt-6 flex flex-wrap gap-2">
+                {project.tags.map((tag, index) => {
+                  const colorClasses = [
+                    "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 ring-blue-700/10 dark:ring-blue-400/30",
+                    "bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 ring-green-700/10 dark:ring-green-400/30",
+                    "bg-amber-50 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300 ring-amber-700/10 dark:ring-amber-400/30",
+                    "bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300 ring-red-700/10 dark:ring-red-400/30",
+                  ];
+                  const colorClass = colorClasses[index % colorClasses.length];
+                  return (
+                    <span
+                      class={`inline-flex items-center rounded-md px-2.5 py-1 text-xs font-medium ring-1 ring-inset ${colorClass}`}
+                    >
+                      {tag}
+                    </span>
+                  );
+                })}
+              </div>
             </div>
+
+            {/* Hover Effect Border */}
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 dark:ring-white/10 pointer-events-none" />
           </article>
         ))
       }
+    </div>
+
+    {/* View All Projects CTA - Blue */}
+    <div class="mt-16 flex justify-center">
+      <a
+        href="/projects"
+        class="rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-blue-500 transition-all hover:scale-105"
+      >
+        View All Projects →
+      </a>
     </div>
   </div>
 </section>

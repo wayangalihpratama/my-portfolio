@@ -10,13 +10,13 @@ export default function MobileMenu({ menuItems }) {
   return (
     <header className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <nav className="flex h-16 items-center justify-between">
-        {/* Logo/Site Title */}
+        {/* Logo/Site Title - Blue gradient */}
         <div className="flex-shrink-0">
           <a
             href={import.meta.env.BASE_URL}
-            className="text-2xl font-bold text-indigo-600 dark:text-indigo-400"
+            className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-green-400"
           >
-            [GP]
+            wgprtm
           </a>
         </div>
 
@@ -28,26 +28,25 @@ export default function MobileMenu({ menuItems }) {
                 <a
                   key={item.name}
                   href={import.meta.env.BASE_URL + item.href}
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400 transition-colors"
                 >
                   {item.name}
                 </a>
               ))}
-              <ThemeToggle /> {/* <-- ADD THE TOGGLE HERE */}
+              <ThemeToggle />
             </div>
           </div>
         </div>
 
         {/* Mobile Menu Button and Toggle */}
         <div className="flex sm:hidden items-center gap-2">
-          <ThemeToggle /> {/* <-- ADD THE TOGGLE FOR MOBILE TOO */}
+          <ThemeToggle />
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
-            className="inline-flex items-center justify-center rounded-md p-2 text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 dark:text-gray-400 dark:hover:text-white"
+            className="inline-flex items-center justify-center rounded-md p-2 text-gray-500 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 dark:text-gray-400 dark:hover:text-blue-400 dark:hover:bg-gray-800 transition-colors"
             aria-expanded={isOpen}
           >
-            {/* ... Icon markup (no change) ... */}
             {isOpen ? (
               <svg
                 className="block h-6 w-6"
@@ -92,7 +91,7 @@ export default function MobileMenu({ menuItems }) {
             <a
               key={item.name}
               href={import.meta.env.BASE_URL + item.href}
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400 transition-colors"
             >
               {item.name}
             </a>
