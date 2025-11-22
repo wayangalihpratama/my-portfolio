@@ -1,0 +1,71 @@
+---
+// src/components/ProjectsSection.astro
+const projects = [
+  {
+    name: "Project Name 1",
+    description:
+      "A brief description of your amazing web application. Highlight key features and the problem it solves.",
+    tags: ["React", "Tailwind CSS", "Node.js"],
+    link: "#",
+  },
+  {
+    name: "Project Name 2",
+    description:
+      "A complex backend service built with clean architecture. Describe the technical challenge you overcame.",
+    tags: ["Node.js", "Express", "PostgreSQL"],
+    link: "#",
+  },
+  {
+    name: "Project Name 3 (Astro Blog)",
+    description:
+      "A high-speed content site built purely with Astro for maximum performance and SEO score.",
+    tags: ["Astro", "MDX", "Tailwind CSS"],
+    link: "#",
+  },
+];
+---
+
+<section id="projects" class="py-24 sm:py-32 dark:bg-gray-900">
+  <div class="mx-auto max-w-7xl px-4 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <h2
+        class="text-base font-semibold leading-7 text-indigo-600 dark:text-indigo-400"
+      >
+        My Work
+      </h2>
+      <p
+        class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+      >
+        Featured Projects
+      </p>
+    </div>
+    <div
+      class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+    >
+      {
+        projects.map((project) => (
+          <article class="flex flex-col items-start justify-between p-6 rounded-xl shadow-lg bg-gray-50 dark:bg-gray-800 transition hover:shadow-2xl">
+            <div class="group relative">
+              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
+                <a href={project.link}>
+                  <span class="absolute inset-0" />
+                  {project.name}
+                </a>
+              </h3>
+              <p class="mt-5 text-sm leading-6 text-gray-600 dark:text-gray-400">
+                {project.description}
+              </p>
+            </div>
+            <div class="mt-6 flex flex-wrap items-center gap-y-2 gap-x-2">
+              {project.tags.map((tag) => (
+                <span class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

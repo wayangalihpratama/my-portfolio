@@ -1,0 +1,49 @@
+---
+// src/components/Hero.astro
+// Use the base URL for the CV download link
+const resumeLink = import.meta.env.BASE_URL + "Galih-Pratama-CV.pdf";
+---
+
+<section class="relative isolate overflow-hidden pt-14 dark:bg-gray-900">
+  <div class="mx-auto max-w-7xl px-4 py-24 sm:py-32 lg:px-8 lg:py-40">
+    <div class="lg:grid lg:grid-cols-12 lg:gap-x-8">
+      <div class="lg:col-span-6 lg:self-center">
+        <h1
+          class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white"
+        >
+          Hi, I'm **Galih Pratama**, a Full-Stack Developer.
+        </h1>
+        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+          I build high-performance web applications using modern stacks like
+          **Astro, React, and Node.js**. Let's create something fast and
+          reliable.
+        </p>
+        <div class="mt-10 flex items-center gap-x-6">
+          <a
+            href="#projects"
+            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >
+            View Projects
+          </a>
+          <a
+            href={resumeLink}
+            class="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:text-indigo-600"
+          >
+            Download CV <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      {/* Placeholder for your profile image or 3D graphic */}
+      <div class="lg:col-span-6 lg:mt-0 mt-16 flex justify-center">
+        <div
+          class="h-80 w-80 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center"
+        >
+          <span class="text-gray-500 dark:text-gray-400"
+            >Profile Image Placeholder</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
