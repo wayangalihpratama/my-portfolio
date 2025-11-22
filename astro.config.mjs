@@ -1,11 +1,10 @@
-// @ts-check
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://astro.build/config
 export default defineConfig({
-  base: "/my-portfolio",
+  site: "https://wayangalihpratama.github.io",
+  base: "/my-portfolio", // Your repository name
   integrations: [react()],
   vite: {
     plugins: [tailwindcss()],
