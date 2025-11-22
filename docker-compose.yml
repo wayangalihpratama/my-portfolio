@@ -1,6 +1,6 @@
 services:
   portfolio_dev:
-    # 1. Build the container image using the Dockerfile in the current directory
+    # 1. Build the container image using the Dockerfile
     build:
       context: .
       dockerfile: Dockerfile
@@ -10,12 +10,10 @@ services:
       - "4321:4321"
 
     # 3. Mount the local directory to the container's working directory
-    # This enables instant file updates (Hot Module Replacement)
     volumes:
       - .:/app
-      # Exclude the node_modules folder from the volume mount.
-      # This ensures the container uses the dependencies it installed internally,
-      # preventing compatibility issues between your host and container OS.
+      # Exclude the node_modules folder from the volume mount to ensure
+      # the container uses the dependencies it installed internally.
       - /app/node_modules
 
     # 4. Keep the container running for development
