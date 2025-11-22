@@ -1,0 +1,36 @@
+# Dependencies
+/node_modules
+/.pnpm-store
+
+# Astro/Build Artifacts
+/dist
+/.astro/
+/out/
+
+# IDE files
+.vscode/
+
+# Environment Variables
+.env
+.env.local
+
+# npm/pnpm/yarn lock file backups
+*.bak
+pnpm-lock.yaml.bak
+yarn.lock.bak
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker Compose Specific
+# Docker Compose typically builds locally, so we ignore its related files
+docker-compose.override.yml
+docker-compose.local.yml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
