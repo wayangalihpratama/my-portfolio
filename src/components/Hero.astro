@@ -1,6 +1,7 @@
 ---
 // src/components/Hero.astro
-const resumeLink = import.meta.env.BASE_URL + "Galih-Pratama-CV.pdf";
+const resumeLink = import.meta.env.BASE_URL + "/Galih-Pratama-CV.pdf";
+const profilePic = import.meta.env.BASE_URL + "/profile.png";
 ---
 
 <section class="relative isolate overflow-hidden dark:bg-gray-900">
@@ -120,7 +121,7 @@ const resumeLink = import.meta.env.BASE_URL + "Galih-Pratama-CV.pdf";
                   class="mx-auto h-96 w-96 rounded-full bg-gradient-to-br from-blue-500 to-green-600 flex items-center justify-center text-white text-6xl font-bold shadow-lg"
                 >
                   <img
-                    src="../../public/profile.png"
+                    src={profilePic}
                     alt="galih profile pic"
                     class="object-cover object-center w-full rounded-full"
                   />
