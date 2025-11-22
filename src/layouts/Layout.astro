@@ -1,11 +1,8 @@
 ---
-// src/layouts/Layout.astro
 import MobileMenu from "../components/MobileMenu.jsx";
 import "../styles/global.css";
-
 const { title } = Astro.props;
 
-// Define your menu links here
 const menuItems = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
@@ -24,10 +21,24 @@ const menuItems = [
       type="image/svg+xml"
       href={import.meta.env.BASE_URL + "favicon.svg"}
     />
+
+    <!-- Inline script to prevent flash of wrong theme -->
+    <script is:inline>
+      // This runs immediately before the page renders
+      const theme = localStorage.getItem("theme");
+      const systemPrefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+
+      if (theme === "dark" || (!theme && systemPrefersDark)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
   </head>
   <body class="bg-white dark:bg-gray-900">
     <MobileMenu menuItems={menuItems} client:load />
-
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <slot />
     </div>
