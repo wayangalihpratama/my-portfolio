@@ -1,30 +1,35 @@
 ---
 // src/layouts/Layout.astro
-import MobileMenu from '../components/MobileMenu.jsx';
-import '../styles/global.css'; // Assuming your global styles/tailwind imports are here
+import MobileMenu from "../components/MobileMenu.jsx";
+import "../styles/global.css";
 
 const { title } = Astro.props;
 
 // Define your menu links here
 const menuItems = [
-    { name: 'Home', href: '/' },
-    { name: 'Projects', href: 'projects' }, // Make sure to create src/pages/projects.astro later
-    { name: 'Contact', href: 'contact' },  // Make sure to create src/pages/contact.astro later
+  { name: "Home", href: "/" },
+  { name: "Projects", href: "/projects" },
+  { name: "Contact", href: "/contact" },
 ];
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>{title}</title>
-		<link rel="icon" type="image/svg+xml" href={import.meta.env.BASE_URL + "favicon.svg"} />
-	</head>
-	<body class="bg-white dark:bg-gray-900">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href={import.meta.env.BASE_URL + "favicon.svg"}
+    />
+  </head>
+  <body class="bg-white dark:bg-gray-900">
+    <MobileMenu menuItems={menuItems} client:load />
 
-        <MobileMenu menuItems={menuItems} client:load />
-
-		<slot />
-	</body>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <slot />
+    </div>
+  </body>
 </html>
