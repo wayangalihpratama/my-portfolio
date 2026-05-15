@@ -1,36 +1,43 @@
-# Astro Starter Kit: Basics
+# Wayan Galih Pratama - Professional Portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+Modern, high-performance developer portfolio built with **Astro v5**, **React 19**, and **Tailwind CSS v4**.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Key Features
+- **AI-Driven Research**: Content derived from real-world GitHub history analysis.
+- **Dynamic Content**: Project metadata externalized to `src/data/projects.json`.
+- **Premium UI**: Category-aware color mapping, glassmorphism badges, and smooth animations.
+- **Docker-First Workflow**: Consistent development environment via a specialized wrapper.
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
+## 🧞 Project Structure
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├── .agent/              # AI Agent configuration
+├── agent_docs/          # Internal sprint artifacts (git-ignored)
+├── docs/                # Shared technical documentation (LLD, Feature Specs)
+├── public/              # Static assets
+├── src/
+│   ├── components/      # UI components
+│   ├── data/            # Project JSON data
+│   ├── layouts/         # Page layouts
+│   └── pages/           # Astro pages
+├── dc.sh                # Docker Compose wrapper script
+└── package.json         # Dependencies and scripts
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠️ Commands
 
-## 🧞 Commands
+All commands should be run via the `./dc.sh` wrapper for environment consistency:
 
-All commands are run from the root of the project, from a terminal:
+| Task | Command |
+|------|---------|
+| Start Development | `./dc.sh pnpm run dev` |
+| Build Production | `./dc.sh pnpm run build` |
+| Preview Build | `./dc.sh pnpm run preview` |
+| Install Dependencies| `./dc.sh pnpm install` |
+
+## 📐 Architecture
+See the full [Low-Level Design (LLD)](docs/LLD.md) for detailed technical specifications.
+
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |

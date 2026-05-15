@@ -1,34 +1,15 @@
 ---
 // src/components/ProjectsSection.astro
-const projects = [
-  {
-    name: "RAG Knowledge System",
-    description:
-      "Intelligent retrieval-augmented generation system that bridges vast knowledge bases with contextual AI responses. Built with modern LLM integration.",
-    tags: ["Python", "LangChain", "Vector DB", "RAG"],
-    link: "#",
-    featured: true,
-    color: "red",
-  },
-  {
-    name: "Akvo Platform Features",
-    description:
-      "Contributing to global water and sanitation data platform, building features that help organizations make data-driven decisions.",
-    tags: ["React", "Node.js", "PostgreSQL"],
-    link: "#",
-    featured: true,
-    color: "blue",
-  },
-  {
-    name: "Modern Web Dashboard",
-    description:
-      "High-performance analytics dashboard with real-time data visualization and responsive design for maximum user experience.",
-    tags: ["Astro", "React", "Tailwind CSS"],
-    link: "#",
-    featured: false,
-    color: "green",
-  },
-];
+import projectsData from "../data/projects.json";
+import ProjectGrid from "./ProjectGrid";
+
+const allProjects = projectsData.projects;
+// In the future, we might want to only show featured projects on the homepage
+const featuredProjects = allProjects.filter((p) => p.featured);
+const otherProjects = allProjects.filter((p) => !p.featured);
+
+// Combine them to show featured first
+const projects = [...featuredProjects, ...otherProjects];
 ---
 
 <section id="projects" class="relative py-24 sm:py-32 dark:bg-gray-900">
@@ -65,83 +46,8 @@ const projects = [
       </p>
     </div>
 
-    <!-- Projects Grid -->
-    <div
-      class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
-    >
-      {
-        projects.map((project) => (
-          <article class="relative flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-gray-800 shadow-lg ring-1 ring-gray-200 dark:ring-gray-700 transition-all hover:shadow-2xl hover:scale-105 hover:-translate-y-1">
-            {/* Featured Badge - Red for featured */}
-            {project.featured && (
-              <div class="absolute top-4 right-4 z-10">
-                <span class="inline-flex items-center rounded-full bg-red-600 px-3 py-1 text-xs font-semibold text-white shadow-lg">
-                  ⭐ Featured
-                </span>
-              </div>
-            )}
-
-            {/* Color accent bar at top */}
-            <div
-              class={`h-2 ${
-                project.color === "red"
-                  ? "bg-gradient-to-r from-red-500 to-red-600"
-                  : project.color === "blue"
-                    ? "bg-gradient-to-r from-blue-500 to-blue-600"
-                    : "bg-gradient-to-r from-green-500 to-green-600"
-              }`}
-            />
-
-            {/* Project Content */}
-            <div class="flex flex-col p-8 flex-1">
-              <div class="flex-1">
-                <h3 class="text-xl font-semibold leading-7 text-gray-900 dark:text-white">
-                  <a
-                    href={project.link}
-                    class={`transition-colors ${
-                      project.color === "red"
-                        ? "hover:text-red-600 dark:hover:text-red-400"
-                        : project.color === "blue"
-                          ? "hover:text-blue-600 dark:hover:text-blue-400"
-                          : "hover:text-green-600 dark:hover:text-green-400"
-                    }`}
-                  >
-                    <span class="absolute inset-0" aria-hidden="true" />
-                    {project.name}
-                  </a>
-                </h3>
-                <p class="mt-4 text-base leading-7 text-gray-600 dark:text-gray-400">
-                  {project.description}
-                </p>
-              </div>
-
-              {/* Tags - Using different colors */}
-              <div class="mt-6 flex flex-wrap gap-2">
-                {project.tags.map((tag, index) => {
-                  const colorClasses = [
-                    "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 ring-blue-700/10 dark:ring-blue-400/30",
-                    "bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 ring-green-700/10 dark:ring-green-400/30",
-                    "bg-amber-50 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300 ring-amber-700/10 dark:ring-amber-400/30",
-                    "bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300 ring-red-700/10 dark:ring-red-400/30",
-                  ];
-                  const colorClass = colorClasses[index % colorClasses.length];
-                  return (
-                    <span
-                      class={`inline-flex items-center rounded-md px-2.5 py-1 text-xs font-medium ring-1 ring-inset ${colorClass}`}
-                    >
-                      {tag}
-                    </span>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Hover Effect Border */}
-            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 dark:ring-white/10 pointer-events-none" />
-          </article>
-        ))
-      }
-    </div>
+    <!-- Projects Grid (Interactive) -->
+    <ProjectGrid initialProjects={projects} client:load />
 
     {/* View All Projects CTA - Blue */}
     <div class="mt-16 flex justify-center">
