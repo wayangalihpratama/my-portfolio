@@ -12,12 +12,12 @@ services:
     # 3. Mount the local directory to the container's working directory
     volumes:
       - .:/app
-      # Exclude the node_modules folder from the volume mount to ensure
-      # the container uses the dependencies it installed internally.
-      - /app/node_modules
+      - node_modules:/app/node_modules
 
-    # 4. Keep the container running for development
     tty: true
     stdin_open: true
+
+volumes:
+  node_modules:
 
     # 5. Execute the default command defined in the Dockerfile (pnpm run dev --host)
