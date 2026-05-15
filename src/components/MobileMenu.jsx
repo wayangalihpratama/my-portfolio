@@ -27,7 +27,7 @@ export default function MobileMenu({ menuItems }) {
               {menuItems.map((item) => (
                 <a
                   key={item.name}
-                  href={import.meta.env.BASE_URL + item.href}
+                  href={item.href}
                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400 transition-colors"
                 >
                   {item.name}
@@ -90,7 +90,7 @@ export default function MobileMenu({ menuItems }) {
           {menuItems.map((item) => (
             <a
               key={item.name}
-              href={import.meta.env.BASE_URL + item.href}
+              href={item.href}
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400 transition-colors"
             >
               {item.name}
