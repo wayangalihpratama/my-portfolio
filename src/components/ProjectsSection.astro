@@ -29,7 +29,7 @@ const projects = [...featuredProjects, ...otherProjects];
 
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <!-- Section Header -->
-    <div class="mx-auto max-w-2xl lg:text-center">
+    <div class="max-w-2xl">
       <h2
         class="text-base font-semibold leading-7 text-green-700 dark:text-green-400"
       >
@@ -52,10 +52,10 @@ const projects = [...featuredProjects, ...otherProjects];
     {/* View All Projects CTA - Blue */}
     <div class="mt-16 flex justify-center">
       <a
-        href="/projects"
-        class="rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-blue-500 transition-all hover:scale-105"
+        href={import.meta.env.BASE_URL + "/projects"}
+        class="inline-flex items-center gap-x-2 rounded-lg bg-blue-600 px-8 py-4 text-sm font-semibold text-white shadow-lg hover:bg-blue-500 transition-all hover:scale-105"
       >
-        View All Projects →
+        View All Projects <span aria-hidden="true">→</span>
       </a>
     </div>
   </div>

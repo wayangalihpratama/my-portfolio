@@ -13,7 +13,7 @@
     {
       "id": "science-for-africa",
       "name": "Science for Africa",
-      "description": "Technical lead on a high-impact collaboration platform for the Science for Africa Foundation, featuring complex OAuth integrations.",
+      "description": "Full-stack developer on a high-impact collaboration platform for the Science for Africa Foundation, featuring complex OAuth integrations.",
       "tags": ["React", "Node.js", "OAuth", "GCP"],
       "link": "https://github.com/akvo/science-for-africa",
       "featured": true,
