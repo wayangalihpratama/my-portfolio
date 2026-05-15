@@ -1,13 +1,37 @@
 ---
-// src/pages/contact.astro (VERIFY)
+// src/pages/projects.astro
 import Layout from "../layouts/Layout.astro";
+import ProjectGrid from "../components/ProjectGrid";
+import projectsData from "../data/projects.json";
+
+const projects = projectsData.projects;
 ---
 
-<Layout title="Projects Galih Pratama">
-  <main class="min-h-svh mx-auto max-w-7xl px-6 lg:px-8">
-    <section class="relative py-24 sm:py-32 dark:bg-gray-900">
-      <h1>Coming soon</h1>
-    </section>
-    <!-- <ContactSection /> -->
+<Layout title="All Projects - Wayan Galih Pratama">
+  <main class="min-h-svh bg-white dark:bg-gray-900">
+    <!-- Header -->
+    <div class="relative py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <a href={import.meta.env.BASE_URL} class="text-sm font-semibold leading-7 text-blue-600 dark:text-blue-400 hover:text-blue-500 transition-colors mb-8 inline-block">
+            ← Back to Home
+          </a>
+          <h2 class="text-base font-semibold leading-7 text-green-700 dark:text-green-400">
+            Portfolio
+          </h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+            Full Project Archive
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
+            A comprehensive look at all my work, from enterprise platforms to personal AI experiments.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="pb-24 sm:pb-32">
+      <ProjectGrid initialProjects={projects} client:load />
+    </div>
   </main>
 </Layout>

@@ -1,0 +1,98 @@
+---
+// src/components/AboutSection.astro
+---
+
+<section id="about" class="relative py-24 sm:py-32 overflow-hidden dark:bg-gray-900">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16 items-center">
+      
+      <!-- Text Content -->
+      <div>
+        <h2 class="text-base font-semibold leading-7 text-blue-600 dark:text-blue-400">
+          About Me
+        </h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+          Bridging Systems with Intelligence
+        </p>
+        
+        <div class="mt-8 space-y-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
+          <p>
+            I'm a <strong>Full-stack Developer</strong> currently building impact-driven platforms at <strong>Akvo</strong>. My expertise lies at the intersection of traditional enterprise scaling and modern AI innovation.
+          </p>
+          <p>
+            Over the past year, I've focused on mastering <strong>Retrieval-Augmented Generation (RAG)</strong> and <strong>Agentic Tooling</strong>. I believe the future of software lies in creating systems that don't just store data, but intelligently bridge the gap between knowledge and action.
+          </p>
+          <p>
+            When I'm not architecting data pipelines or refining UI/UX patterns, you can find me exploring the intricate rhythms of <strong>Balinese music</strong> or traveling to find new perspectives. I believe a well-rounded life fuels better code.
+          </p>
+        </div>
+
+        <!-- My Values / Philosophy -->
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="rounded-xl bg-gray-50 dark:bg-gray-800/50 p-6 border border-gray-100 dark:border-gray-700">
+            <h4 class="font-bold text-gray-900 dark:text-white">Precision</h4>
+            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Building robust, scalable architectures that stand the test of time.</p>
+          </div>
+          <div class="rounded-xl bg-gray-50 dark:bg-gray-800/50 p-6 border border-gray-100 dark:border-gray-700">
+            <h4 class="font-bold text-gray-900 dark:text-white">Innovation</h4>
+            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Leveraging AI to solve real-world problems in human-centric ways.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Side / Quick Stats -->
+      <div class="relative">
+        <div class="aspect-[4/5] rounded-2xl bg-gradient-to-br from-blue-500/10 to-green-500/10 border border-blue-100 dark:border-blue-900/30 p-8 flex flex-col justify-center">
+          <div class="space-y-8">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-sm font-medium text-gray-900 dark:text-white">Enterprise Systems</span>
+                <span class="text-sm font-medium text-blue-600 dark:text-blue-400">95%</span>
+              </div>
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-sm font-medium text-gray-900 dark:text-white">AI & RAG Development</span>
+                <span class="text-sm font-medium text-green-600 dark:text-green-400">90%</span>
+              </div>
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div class="bg-green-600 h-2 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-sm font-medium text-gray-900 dark:text-white">Full-stack (React/Node/Python)</span>
+                <span class="text-sm font-medium text-amber-600 dark:text-amber-400">98%</span>
+              </div>
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div class="bg-amber-600 h-2 rounded-full" style="width: 98%"></div>
+              </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-100 dark:border-gray-700">
+              <div class="flex items-center gap-4">
+                <div class="h-12 w-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">
+                  AK
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-gray-900 dark:text-white">Current Role</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">Developer @ Akvo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative element -->
+        <div class="absolute -top-4 -right-4 h-24 w-24 bg-green-500/10 rounded-full blur-2xl animate-pulse"></div>
+        <div class="absolute -bottom-4 -left-4 h-32 w-32 bg-blue-500/10 rounded-full blur-2xl animate-pulse"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
