@@ -1,0 +1,23 @@
+[
+  {
+    "company": "Akvo",
+    "role": "Full-Stack & RAG Engineer",
+    "period": "Enterprise Development",
+    "description": "Architected core RAG systems, dynamic report generator tools (AkvoFormPrint), and high-impact web collaboration platforms.",
+    "skills": ["Python", "RAG / LangChain", "React", "WeasyPrint", "GCP"]
+  },
+  {
+    "company": "IDH Sustainable Trade Initiative",
+    "role": "Full-Stack Maintenance Engineer",
+    "period": "Enterprise Systems",
+    "description": "Maintained and expanded large-scale data portals, ensuring data integrity and multi-tenant reporting performance.",
+    "skills": ["PHP", "Laravel", "MySQL", "Docker"]
+  },
+  {
+    "company": "Open-Source & AI Agentics",
+    "role": "Lead Systems Creator",
+    "period": "Continuous",
+    "description": "Designed custom Model Context Protocol (AgMCP) toolkits and autonomous AI agent workflows.",
+    "skills": ["TypeScript", "Agentic MCP", "Node.js", "Astro"]
+  }
+]
