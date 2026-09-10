@@ -139,6 +139,14 @@ function inferColor(category) {
   }
 }
 
+function inferStatus(repo) {
+  const name = repo.name.toLowerCase();
+  if (name.startsWith('learn-') || name.startsWith('poc-') || name.includes('test-') || name.includes('skeleton')) {
+    return 'in-development';
+  }
+  return 'completed';
+}
+
 async function syncProjects() {
   console.log(`📡 Fetching public repositories for user "${GITHUB_USERNAME}" from GitHub API...`);
 
@@ -173,6 +181,7 @@ async function syncProjects() {
 
     const category = overlay.category || inferCategory(repo);
     const color = overlay.color || inferColor(category);
+    const status = overlay.status || inferStatus(repo);
 
     const tags = Array.from(new Set([
       ...(repo.language ? [repo.language] : []),
@@ -196,7 +205,8 @@ async function syncProjects() {
       link: overlay.link || repo.html_url,
       featured: overlay.featured !== undefined ? overlay.featured : repo.stargazers_count > 1,
       color,
-      category
+      category,
+      status
     });
   }
 
@@ -213,7 +223,8 @@ async function syncProjects() {
         link: overlay.link || "#",
         featured: overlay.featured !== undefined ? overlay.featured : false,
         color: overlay.color || 'blue',
-        category: overlay.category || 'Enterprise'
+        category: overlay.category || 'Enterprise',
+        status: overlay.status || 'completed'
       });
     }
   }

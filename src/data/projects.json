@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-09-10T05:18:06.354Z",
+  "lastSynced": "2026-09-10T05:20:26.106Z",
   "projects": [
     {
       "id": "akvo-rag",
@@ -19,7 +19,8 @@
       "link": "https://github.com/akvo/akvo-rag",
       "featured": true,
       "color": "green",
-      "category": "AI & RAG"
+      "category": "AI & RAG",
+      "status": "completed"
     },
     {
       "id": "akvo-form-print",
@@ -39,7 +40,8 @@
       "link": "https://github.com/akvo/AkvoFormPrint-init",
       "featured": true,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "akvo-react-form-editor",
@@ -59,7 +61,8 @@
       "link": "https://github.com/akvo/akvo-react-form-editor",
       "featured": true,
       "color": "blue",
-      "category": "Enterprise"
+      "category": "Enterprise",
+      "status": "completed"
     },
     {
       "id": "akvo-react-form",
@@ -78,7 +81,8 @@
       "link": "https://github.com/akvo/akvo-react-form",
       "featured": true,
       "color": "blue",
-      "category": "Enterprise"
+      "category": "Enterprise",
+      "status": "completed"
     },
     {
       "id": "idh-idc",
@@ -97,7 +101,8 @@
       "link": "https://github.com/akvo/idh-idc",
       "featured": true,
       "color": "blue",
-      "category": "Enterprise"
+      "category": "Enterprise",
+      "status": "completed"
     },
     {
       "id": "my-portfolio",
@@ -114,7 +119,8 @@
       "link": "https://github.com/wayangalihpratama/my-portfolio",
       "featured": false,
       "color": "red",
-      "category": "Personal"
+      "category": "Personal",
+      "status": "completed"
     },
     {
       "id": "my-antigravity-pilot",
@@ -131,7 +137,8 @@
       "link": "https://github.com/wayangalihpratama/my-antigravity-pilot",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "pacepals",
@@ -148,7 +155,8 @@
       "link": "https://github.com/wayangalihpratama/PacePals",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "localrag-vision",
@@ -165,7 +173,8 @@
       "link": "https://github.com/wayangalihpratama/localRAG-vision",
       "featured": false,
       "color": "green",
-      "category": "AI & RAG"
+      "category": "AI & RAG",
+      "status": "completed"
     },
     {
       "id": "general-siwins",
@@ -182,7 +191,8 @@
       "link": "https://github.com/wayangalihpratama/general-siwins",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "autoffiliate",
@@ -199,7 +209,8 @@
       "link": "https://github.com/wayangalihpratama/autoffiliate",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "dawn-dash",
@@ -216,7 +227,8 @@
       "link": "https://github.com/wayangalihpratama/dawn-dash",
       "featured": false,
       "color": "red",
-      "category": "Personal"
+      "category": "Personal",
+      "status": "completed"
     },
     {
       "id": "learn-strapi-nextjs",
@@ -233,7 +245,8 @@
       "link": "https://github.com/wayangalihpratama/learn-strapi-nextjs",
       "featured": false,
       "color": "red",
-      "category": "Personal"
+      "category": "Personal",
+      "status": "in-development"
     },
     {
       "id": "aswa-rmi",
@@ -250,7 +263,8 @@
       "link": "https://github.com/wayangalihpratama/aswa-rmi",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "laravelapp-skeleton",
@@ -267,7 +281,8 @@
       "link": "https://github.com/wayangalihpratama/laravelapp-skeleton",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "in-development"
     },
     {
       "id": "test-antigravity",
@@ -284,7 +299,8 @@
       "link": "https://github.com/wayangalihpratama/test-antigravity",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "in-development"
     },
     {
       "id": "remote-mcp-server-authless",
@@ -301,7 +317,8 @@
       "link": "https://github.com/wayangalihpratama/remote-mcp-server-authless",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "gis-generic-app",
@@ -318,7 +335,8 @@
       "link": "https://github.com/wayangalihpratama/gis-generic-app",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "learn-multimodal-rag",
@@ -337,7 +355,8 @@
       "link": "https://github.com/wayangalihpratama/learn-multimodal-rag",
       "featured": false,
       "color": "green",
-      "category": "AI & RAG"
+      "category": "AI & RAG",
+      "status": "in-development"
     },
     {
       "id": "laravel-chat-app",
@@ -354,7 +373,8 @@
       "link": "https://github.com/wayangalihpratama/laravel-chat-app",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "roomie",
@@ -371,7 +391,8 @@
       "link": "https://github.com/wayangalihpratama/roomie",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "learn-next-js-14",
@@ -388,7 +409,8 @@
       "link": "https://github.com/wayangalihpratama/learn-next-js-14",
       "featured": false,
       "color": "red",
-      "category": "Personal"
+      "category": "Personal",
+      "status": "in-development"
     },
     {
       "id": "wgprtm-gspread",
@@ -405,7 +427,8 @@
       "link": "https://github.com/wayangalihpratama/wgprtm-gspread",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "pytorch-ai-chatbot",
@@ -422,7 +445,8 @@
       "link": "https://github.com/wayangalihpratama/pytorch-ai-chatbot",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "learn-ollama",
@@ -439,7 +463,8 @@
       "link": "https://github.com/wayangalihpratama/learn-ollama",
       "featured": false,
       "color": "red",
-      "category": "Personal"
+      "category": "Personal",
+      "status": "in-development"
     },
     {
       "id": "learning-bash",
@@ -456,7 +481,8 @@
       "link": "https://github.com/wayangalihpratama/learning-bash",
       "featured": false,
       "color": "red",
-      "category": "Personal"
+      "category": "Personal",
+      "status": "completed"
     },
     {
       "id": "flow-seed-monitoring-survey",
@@ -473,7 +499,8 @@
       "link": "https://github.com/wayangalihpratama/flow-seed-monitoring-survey",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "ionic-react",
@@ -490,7 +517,8 @@
       "link": "https://github.com/wayangalihpratama/ionic-react",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "cordova-react-manual",
@@ -507,7 +535,8 @@
       "link": "https://github.com/wayangalihpratama/cordova-react-manual",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "reco-react_cordova",
@@ -524,7 +553,8 @@
       "link": "https://github.com/wayangalihpratama/reco-react_cordova",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "pern",
@@ -541,7 +571,8 @@
       "link": "https://github.com/wayangalihpratama/pern",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "react-testing-course",
@@ -558,7 +589,8 @@
       "link": "https://github.com/wayangalihpratama/react-testing-course",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "poc-gsheets-api",
@@ -575,7 +607,8 @@
       "link": "https://github.com/wayangalihpratama/poc-gsheets-api",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "in-development"
     },
     {
       "id": "react-hooks-antd",
@@ -592,7 +625,8 @@
       "link": "https://github.com/wayangalihpratama/react-hooks-antd",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "plant-map",
@@ -609,7 +643,8 @@
       "link": "https://github.com/wayangalihpratama/plant-map",
       "featured": false,
       "color": "amber",
-      "category": "Tools"
+      "category": "Tools",
+      "status": "completed"
     },
     {
       "id": "science-for-africa",
@@ -629,7 +664,8 @@
       "link": "https://github.com/akvo/science-for-africa",
       "featured": false,
       "color": "blue",
-      "category": "Enterprise"
+      "category": "Enterprise",
+      "status": "completed"
     },
     {
       "id": "agmcp",
@@ -648,7 +684,8 @@
       "link": "#",
       "featured": false,
       "color": "green",
-      "category": "AI & RAG"
+      "category": "AI & RAG",
+      "status": "completed"
     }
   ]
 }
