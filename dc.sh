@@ -1,15 +1,29 @@
 #!/bin/bash
 
-# Simple Docker Compose wrapper for my-portfolio
-# Usage: ./dc.sh [command]
-# Example: ./dc.sh pnpm run dev
+# Docker Compose wrapper for my-portfolio
+# Usage: 
+#   ./dc.sh up -d          (Starts container in background)
+#   ./dc.sh down           (Stops containers)
+#   ./dc.sh logs -f        (Views logs)
+#   ./dc.sh [npm/pnpm/sh]  (Executes one-off commands inside portfolio_dev)
 
 SERVICE="portfolio_dev"
 
 if [ $# -eq 0 ]; then
     echo "Usage: ./dc.sh [command]"
-    echo "Example: ./dc.sh pnpm run build"
+    echo "Examples:"
+    echo "  ./dc.sh up -d"
+    echo "  ./dc.sh down"
+    echo "  ./dc.sh npm run dev"
     exit 1
 fi
 
-docker compose run --rm "$SERVICE" "$@"
+case "$1" in
+    up|down|ps|logs|build|restart|stop)
+        docker compose "$@"
+        ;;
+    *)
+        docker compose run --rm "$SERVICE" "$@"
+        ;;
+esac
+
