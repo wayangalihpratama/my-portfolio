@@ -19,20 +19,6 @@ const CURATED_OVERLAY = {
       "Integrated strict role-based data isolation"
     ]
   },
-  "science-for-africa": {
-    name: "Science for Africa Platform",
-    description: "High-impact collaboration platform for the Science for Africa Foundation, featuring complex OAuth integrations.",
-    longDescription: "Developed key frontend features and OAuth authentication workflows for the Science for Africa Foundation platform, powering research collaboration across the continent.",
-    link: "https://github.com/akvo/science-for-africa",
-    category: "Enterprise",
-    color: "blue",
-    featured: true,
-    achievements: [
-      "Integrated multi-provider OAuth authentication",
-      "Designed responsive research grant application workflows",
-      "Optimized client-side rendering performance"
-    ]
-  },
   "akvo-form-print": {
     name: "AkvoFormPrint",
     description: "A specialized Python tool for rendering modular forms into high-fidelity PDF or HTML using WeasyPrint and Jinja2.",
@@ -47,13 +33,67 @@ const CURATED_OVERLAY = {
       "CLI & microservice wrapper for asynchronous job processing"
     ]
   },
+  "akvo-react-form-editor": {
+    name: "Akvo React Form Editor",
+    description: "Modular drag-and-drop form builder component library for designing complex dynamic survey forms.",
+    longDescription: "Engineered a React-based interactive form builder enabling non-technical users to build complex logic flows, question groups, and validation rules.",
+    link: "https://github.com/akvo/akvo-react-form-editor",
+    category: "Enterprise",
+    color: "blue",
+    featured: true,
+    achievements: [
+      "Dynamic field validation rules & conditional branching",
+      "Export/Import schema compatibility with Akvo Flow forms",
+      "High performance canvas rendering"
+    ]
+  },
+  "akvo-react-form": {
+    name: "Akvo React Form",
+    description: "High-performance React form rendering engine for executing dynamic survey questionnaires with offline storage support.",
+    longDescription: "Core frontend form runtime component that parses JSON form schemas and renders interactive responsive inputs with client-side validation.",
+    link: "https://github.com/akvo/akvo-react-form",
+    category: "Enterprise",
+    color: "blue",
+    featured: true,
+    achievements: [
+      "Offline-first state storage for remote data collection",
+      "Cascading multi-level selection inputs & geospatial data capture"
+    ]
+  },
+  "idh-idc": {
+    name: "IDH-IDC Platform",
+    description: "Maintenance and feature development for large-scale data portals, ensuring data integrity and user-friendly reporting.",
+    longDescription: "Maintained and expanded enterprise data portal features for IDH Sustainable Trade Initiative, handling multi-tenant reporting dashboards and data exports.",
+    link: "https://github.com/akvo/idh-idc",
+    category: "Enterprise",
+    color: "blue",
+    featured: true,
+    achievements: [
+      "Engineered automated data validation scripts in PHP & MySQL",
+      "Containerized legacy service environments with Docker Compose"
+    ]
+  },
+  "science-for-africa": {
+    name: "Science for Africa Platform",
+    description: "High-impact collaboration platform for the Science for Africa Foundation, featuring complex OAuth integrations.",
+    longDescription: "Developed key frontend features and OAuth authentication workflows for the Science for Africa Foundation platform, powering research collaboration across the continent.",
+    link: "https://github.com/akvo/science-for-africa",
+    category: "Enterprise",
+    color: "blue",
+    featured: false,
+    achievements: [
+      "Integrated multi-provider OAuth authentication",
+      "Designed responsive research grant application workflows",
+      "Optimized client-side rendering performance"
+    ]
+  },
   "agmcp": {
     name: "AgMCP",
     description: "Agentic Model Context Protocol (MCP) servers and tools for autonomous AI agent workflows.",
     longDescription: "Created custom Model Context Protocol (MCP) servers and toolkits enabling autonomous AI agents to safely execute command workflows and inspect system resources.",
     category: "AI & RAG",
     color: "green",
-    featured: true,
+    featured: false,
     achievements: [
       "Standardized JSON-RPC 2.0 tool definitions for AI assistants",
       "Implemented secure sandbox bounds for filesystem & process access"
@@ -65,22 +105,10 @@ const CURATED_OVERLAY = {
     longDescription: "Local RAG pipeline capable of performing semantic search and contextual visual QA over image and document collections.",
     category: "AI & RAG",
     color: "green",
-    featured: true,
+    featured: false,
     achievements: [
       "Local multimodal vector embeddings and document parsing",
       "100% offline local LLM inference without cloud dependencies"
-    ]
-  },
-  "idh-idc": {
-    name: "IDH-IDC Platform",
-    description: "Maintenance and feature development for large-scale data portals, ensuring data integrity and user-friendly reporting.",
-    longDescription: "Maintained and expanded enterprise data portal features for IDH Sustainable Trade Initiative, handling multi-tenant reporting dashboards and data exports.",
-    category: "Enterprise",
-    color: "blue",
-    featured: false,
-    achievements: [
-      "Engineered automated data validation scripts in PHP & MySQL",
-      "Containerized legacy service environments with Docker Compose"
     ]
   }
 };
