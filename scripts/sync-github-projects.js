@@ -4,9 +4,12 @@ import path from 'path';
 const GITHUB_USERNAME = 'wayangalihpratama';
 const OUTPUT_FILE = path.join(process.cwd(), 'src/data/projects.json');
 
-// Local curated projects (e.g., enterprise projects or custom descriptions/achievements)
 const CURATED_OVERLAY = {
   "akvo-rag": {
+    name: "Akvo RAG System",
+    description: "Core architecture for retrieval-augmented generation, enabling intelligent data-driven responses for global development platforms.",
+    longDescription: "Built an enterprise Retrieval-Augmented Generation (RAG) pipeline enabling semantic vector search and LLM contextual synthesis across massive unstructured project datasets.",
+    link: "https://github.com/akvo/akvo-rag",
     category: "AI & RAG",
     color: "green",
     featured: true,
@@ -17,6 +20,10 @@ const CURATED_OVERLAY = {
     ]
   },
   "science-for-africa": {
+    name: "Science for Africa Platform",
+    description: "High-impact collaboration platform for the Science for Africa Foundation, featuring complex OAuth integrations.",
+    longDescription: "Developed key frontend features and OAuth authentication workflows for the Science for Africa Foundation platform, powering research collaboration across the continent.",
+    link: "https://github.com/akvo/science-for-africa",
     category: "Enterprise",
     color: "blue",
     featured: true,
@@ -27,6 +34,10 @@ const CURATED_OVERLAY = {
     ]
   },
   "akvo-form-print": {
+    name: "AkvoFormPrint",
+    description: "A specialized Python tool for rendering modular forms into high-fidelity PDF or HTML using WeasyPrint and Jinja2.",
+    longDescription: "Architected a high-fidelity PDF and HTML rendering engine designed to convert dynamic survey and monitoring forms into formatted printable reports.",
+    link: "https://github.com/akvo/AkvoFormPrint-init",
     category: "Tools",
     color: "amber",
     featured: true,
@@ -36,7 +47,34 @@ const CURATED_OVERLAY = {
       "CLI & microservice wrapper for asynchronous job processing"
     ]
   },
+  "agmcp": {
+    name: "AgMCP",
+    description: "Agentic Model Context Protocol (MCP) servers and tools for autonomous AI agent workflows.",
+    longDescription: "Created custom Model Context Protocol (MCP) servers and toolkits enabling autonomous AI agents to safely execute command workflows and inspect system resources.",
+    category: "AI & RAG",
+    color: "green",
+    featured: true,
+    achievements: [
+      "Standardized JSON-RPC 2.0 tool definitions for AI assistants",
+      "Implemented secure sandbox bounds for filesystem & process access"
+    ]
+  },
+  "localrag-vision": {
+    name: "LocalRAG Vision",
+    description: "Privacy-first multimodal retrieval-augmented generation pipeline using local vision LLMs.",
+    longDescription: "Local RAG pipeline capable of performing semantic search and contextual visual QA over image and document collections.",
+    category: "AI & RAG",
+    color: "green",
+    featured: true,
+    achievements: [
+      "Local multimodal vector embeddings and document parsing",
+      "100% offline local LLM inference without cloud dependencies"
+    ]
+  },
   "idh-idc": {
+    name: "IDH-IDC Platform",
+    description: "Maintenance and feature development for large-scale data portals, ensuring data integrity and user-friendly reporting.",
+    longDescription: "Maintained and expanded enterprise data portal features for IDH Sustainable Trade Initiative, handling multi-tenant reporting dashboards and data exports.",
     category: "Enterprise",
     color: "blue",
     featured: false,
@@ -119,16 +157,16 @@ async function syncProjects() {
 
     projectsMap.set(id, {
       id,
-      name: repo.name,
-      description: repo.description || 'Public GitHub repository project.',
-      longDescription: repo.description ? `${repo.description} (Synced directly from GitHub repository ${repo.full_name}).` : `Open-source software project hosted on GitHub (${repo.full_name}).`,
+      name: overlay.name || repo.name,
+      description: overlay.description || repo.description || 'Public GitHub repository project.',
+      longDescription: overlay.longDescription || (repo.description ? `${repo.description} (Synced directly from GitHub repository ${repo.full_name}).` : `Open-source software project hosted on GitHub (${repo.full_name}).`),
       achievements: overlay.achievements || [
         `⭐ Stars: ${repo.stargazers_count} | 🍴 Forks: ${repo.forks_count}`,
         `Updated: ${new Date(repo.updated_at).toLocaleDateString()}`
       ],
       tags,
-      link: repo.html_url,
-      featured: overlay.featured !== undefined ? overlay.featured : repo.stargazers_count > 2,
+      link: overlay.link || repo.html_url,
+      featured: overlay.featured !== undefined ? overlay.featured : repo.stargazers_count > 1,
       color,
       category
     });
@@ -139,13 +177,13 @@ async function syncProjects() {
     if (!projectsMap.has(id)) {
       projectsMap.set(id, {
         id,
-        name: id.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
-        description: `Enterprise solution built for ${id.split('-')[0].toUpperCase()}.`,
-        longDescription: `Enterprise application development and engineering solution.`,
+        name: overlay.name || id.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+        description: overlay.description || `Enterprise solution built for ${id.split('-')[0].toUpperCase()}.`,
+        longDescription: overlay.longDescription || `Enterprise application development and engineering solution.`,
         achievements: overlay.achievements || [],
         tags: ["Enterprise", "Python", "Full-Stack"],
-        link: "#",
-        featured: overlay.featured || false,
+        link: overlay.link || "#",
+        featured: overlay.featured !== undefined ? overlay.featured : false,
         color: overlay.color || 'blue',
         category: overlay.category || 'Enterprise'
       });
