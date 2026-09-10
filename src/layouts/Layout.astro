@@ -22,11 +22,36 @@ const favicon = import.meta.env.BASE_URL + "/favicon.png";
     <meta name="viewport" content="width=device-width" />
     <meta
       name="description"
-      content="Wayan Galih Pratama - Fullstack Developer specializing in modern web applications, RAG development, and AI integration."
+      content="Wayan Galih Pratama - Full-Stack & RAG AI Systems Engineer specializing in high-performance web applications, agentic tools, and enterprise architecture."
     />
     <title>{title}</title>
     <link rel="icon" type="image/png" href={favicon} />
 
+    <!-- OpenGraph / Social Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="Wayan Galih Pratama - Full-Stack & RAG AI Systems Engineer." />
+    <meta property="og:image" content={import.meta.env.BASE_URL + "/profile.png"} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content="Wayan Galih Pratama - Full-Stack & RAG AI Systems Engineer." />
+
+    <!-- JSON-LD Structured Data for Search Engines -->
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Wayan Galih Pratama",
+        "jobTitle": "Full-Stack & AI Systems Engineer",
+        "url": "https://github.com/wayangalihpratama",
+        "sameAs": [
+          "https://www.linkedin.com/in/wayan-galih-pratama-1512b7101",
+          "https://github.com/wayangalihpratama"
+        ]
+      }
+    </script>
 
     <!-- Inline script to prevent flash of wrong theme -->
     <script is:inline>
