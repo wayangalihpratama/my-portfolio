@@ -87,18 +87,6 @@ const CURATED_OVERLAY = {
       "Optimized client-side rendering performance"
     ]
   },
-  "agmcp": {
-    name: "AgMCP",
-    description: "Agentic Model Context Protocol (MCP) servers and tools for autonomous AI agent workflows.",
-    longDescription: "Created custom Model Context Protocol (MCP) servers and toolkits enabling autonomous AI agents to safely execute command workflows and inspect system resources.",
-    category: "Personal Projects",
-    color: "amber",
-    featured: false,
-    achievements: [
-      "Standardized JSON-RPC 2.0 tool definitions for AI assistants",
-      "Implemented secure sandbox bounds for filesystem & process access"
-    ]
-  },
   "localrag-vision": {
     name: "LocalRAG Vision",
     description: "Privacy-first multimodal retrieval-augmented generation pipeline using local vision LLMs.",
@@ -131,12 +119,11 @@ function inferColor(category) {
   }
 }
 
-function inferStatus(repo) {
-  const name = repo.name.toLowerCase();
-  if (name.startsWith('learn-') || name.startsWith('poc-') || name.includes('test-') || name.includes('skeleton')) {
-    return 'in-development';
+function inferStatus(repo, category) {
+  if (category === 'Akvo Projects') {
+    return 'completed';
   }
-  return 'completed';
+  return 'in-development';
 }
 
 async function syncProjects() {
@@ -173,7 +160,7 @@ async function syncProjects() {
 
     const category = overlay.category || inferCategory(repo);
     const color = overlay.color || inferColor(category);
-    const status = overlay.status || inferStatus(repo);
+    const status = overlay.status || inferStatus(repo, category);
 
     const tags = Array.from(new Set([
       ...(repo.language ? [repo.language] : []),

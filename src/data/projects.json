@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-09-10T05:22:19.551Z",
+  "lastSynced": "2026-09-10T05:27:40.480Z",
   "projects": [
     {
       "id": "akvo-rag",
@@ -120,7 +120,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "my-antigravity-pilot",
@@ -138,7 +138,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "pacepals",
@@ -156,7 +156,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "localrag-vision",
@@ -174,7 +174,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "general-siwins",
@@ -192,7 +192,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "autoffiliate",
@@ -210,7 +210,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "dawn-dash",
@@ -228,7 +228,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "learn-strapi-nextjs",
@@ -264,7 +264,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "laravelapp-skeleton",
@@ -318,7 +318,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "gis-generic-app",
@@ -336,7 +336,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "learn-multimodal-rag",
@@ -374,7 +374,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "roomie",
@@ -392,7 +392,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "learn-next-js-14",
@@ -428,7 +428,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "pytorch-ai-chatbot",
@@ -446,7 +446,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "learn-ollama",
@@ -482,7 +482,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "flow-seed-monitoring-survey",
@@ -500,7 +500,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "ionic-react",
@@ -518,7 +518,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "cordova-react-manual",
@@ -536,7 +536,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "reco-react_cordova",
@@ -554,7 +554,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "pern",
@@ -572,7 +572,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "react-testing-course",
@@ -590,7 +590,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "poc-gsheets-api",
@@ -626,7 +626,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "plant-map",
@@ -644,7 +644,7 @@
       "featured": false,
       "color": "amber",
       "category": "Personal Projects",
-      "status": "completed"
+      "status": "in-development"
     },
     {
       "id": "science-for-africa",
@@ -665,26 +665,6 @@
       "featured": false,
       "color": "blue",
       "category": "Akvo Projects",
-      "status": "completed"
-    },
-    {
-      "id": "agmcp",
-      "name": "AgMCP",
-      "description": "Agentic Model Context Protocol (MCP) servers and tools for autonomous AI agent workflows.",
-      "longDescription": "Created custom Model Context Protocol (MCP) servers and toolkits enabling autonomous AI agents to safely execute command workflows and inspect system resources.",
-      "achievements": [
-        "Standardized JSON-RPC 2.0 tool definitions for AI assistants",
-        "Implemented secure sandbox bounds for filesystem & process access"
-      ],
-      "tags": [
-        "Enterprise",
-        "Python",
-        "Full-Stack"
-      ],
-      "link": "#",
-      "featured": false,
-      "color": "amber",
-      "category": "Personal Projects",
       "status": "completed"
     }
   ]

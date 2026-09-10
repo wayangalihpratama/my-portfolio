@@ -17,7 +17,7 @@
     "company": "Open-Source & AI Agentics",
     "role": "Lead Systems Creator",
     "period": "Continuous",
-    "description": "Designed custom Model Context Protocol (AgMCP) toolkits and autonomous AI agent workflows.",
+    "description": "Designed custom Model Context Protocol toolkits and autonomous AI agent workflows.",
     "skills": ["TypeScript", "Agentic MCP", "Node.js", "Astro"]
   }
 ]

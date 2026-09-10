@@ -2,102 +2,117 @@
 // src/components/AboutSection.astro
 ---
 
-<section id="about" class="relative py-24 sm:py-32 overflow-hidden dark:bg-gray-900">
+<section id="about" class="relative py-24 sm:py-32 overflow-hidden dark:bg-gray-900 transition-colors duration-300">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16 items-center">
       
       <!-- Text Content -->
       <div>
-        <h2 class="text-base font-semibold leading-7 text-blue-600 dark:text-blue-400">
-          About Me
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 text-xs font-bold ring-1 ring-blue-500/20 mb-4">
+          <span>✨ Engineering Background</span>
+        </div>
+        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+          Bridging Complex Systems with Intelligence
         </h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-          Bridging Systems with Intelligence
-        </p>
         
-        <div class="mt-8 space-y-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
+        <div class="mt-6 space-y-5 text-base sm:text-lg leading-relaxed text-gray-600 dark:text-gray-300">
           <p>
-            I'm a <strong>Full-stack Developer</strong> currently building impact-driven platforms at <strong>Akvo</strong>. My expertise lies at the intersection of traditional enterprise scaling and modern AI innovation.
+            I'm a <strong>Full-Stack & AI Systems Engineer</strong> currently building impact-driven international platforms at <strong class="text-blue-600 dark:text-blue-400">Akvo</strong>. My expertise lies at the intersection of traditional enterprise web architecture and cutting-edge artificial intelligence.
           </p>
           <p>
-            Over the past year, I've focused on mastering <strong>Retrieval-Augmented Generation (RAG)</strong> and <strong>Agentic Tooling</strong>. I believe the future of software lies in creating systems that don't just store data, but intelligently bridge the gap between knowledge and action.
+            Over the past years, I've focused on mastering <strong>Retrieval-Augmented Generation (RAG)</strong> and <strong>Agentic Tooling</strong>. I believe software should not merely present data, but actively assist humans by converting complex knowledge into actionable insights.
           </p>
           <p>
-            When I'm not architecting data pipelines or refining UI/UX patterns, you can find me exploring the intricate rhythms of <strong>Balinese music</strong> or traveling to find new perspectives. I believe a well-rounded life fuels better code.
+            When I'm not architecting data pipelines or building dynamic React forms, I explore the rich polyrhythms of <strong>Balinese music</strong> and cultural arts, bringing structured creativity to engineering.
           </p>
         </div>
 
-        <!-- My Values / Philosophy -->
-        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="rounded-xl bg-gray-50 dark:bg-gray-800/50 p-6 border border-gray-100 dark:border-gray-700">
-            <h4 class="font-bold text-gray-900 dark:text-white">Precision</h4>
-            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Building robust, scalable architectures that stand the test of time.</p>
+        <!-- My Core Principles / Philosophy -->
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="rounded-2xl bg-white/60 dark:bg-gray-800/60 p-5 border border-gray-200/80 dark:border-gray-700/60 backdrop-blur-md shadow-sm hover:border-blue-500/40 transition-all">
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="p-1.5 rounded-lg bg-blue-100 dark:bg-blue-950/80 text-blue-600 dark:text-blue-400">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+              <h4 class="font-bold text-gray-900 dark:text-white">Precision & Reliability</h4>
+            </div>
+            <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">Designing resilient systems and clean component structures built for high scale.</p>
           </div>
-          <div class="rounded-xl bg-gray-50 dark:bg-gray-800/50 p-6 border border-gray-100 dark:border-gray-700">
-            <h4 class="font-bold text-gray-900 dark:text-white">Innovation</h4>
-            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Leveraging AI to solve real-world problems in human-centric ways.</p>
+
+          <div class="rounded-2xl bg-white/60 dark:bg-gray-800/60 p-5 border border-gray-200/80 dark:border-gray-700/60 backdrop-blur-md shadow-sm hover:border-emerald-500/40 transition-all">
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="p-1.5 rounded-lg bg-emerald-100 dark:bg-emerald-950/80 text-emerald-600 dark:text-emerald-400">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </span>
+              <h4 class="font-bold text-gray-900 dark:text-white">Human-Centric AI</h4>
+            </div>
+            <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">Embedding RAG workflows and agentic context to empower user decisions seamlessly.</p>
           </div>
         </div>
       </div>
 
       <!-- Visual Side / Modern Engineering Competencies Card -->
       <div class="relative">
-        <div class="rounded-3xl backdrop-blur-xl bg-white/70 dark:bg-gray-800/70 p-8 shadow-2xl ring-1 ring-gray-200/80 dark:ring-gray-700/80 border border-gray-100 dark:border-gray-700/60 space-y-6">
+        <div class="rounded-3xl backdrop-blur-xl bg-white/80 dark:bg-gray-800/80 p-8 shadow-2xl ring-1 ring-gray-200/80 dark:ring-gray-700/80 border border-gray-100 dark:border-gray-700/60 space-y-6">
           
           <!-- Header -->
           <div class="flex items-center justify-between pb-4 border-b border-gray-200/80 dark:border-gray-700/80">
             <div>
-              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Core Competencies</h3>
-              <p class="text-xs text-gray-500 dark:text-gray-400">Engineering Focus & Architecture Stack</p>
+              <h3 class="text-lg font-extrabold text-gray-900 dark:text-white">Core Competencies</h3>
+              <p class="text-xs font-semibold text-gray-500 dark:text-gray-400">Engineering Focus & Architecture Stack</p>
             </div>
-            <span class="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-950/80 px-3 py-1 text-xs font-bold text-blue-700 dark:text-blue-300">
-              ⚡ Production Specs
+            <span class="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-950/90 px-3 py-1 text-xs font-black text-blue-700 dark:text-blue-300 ring-1 ring-blue-500/30">
+              ⚡ Production Ready
             </span>
           </div>
 
           <!-- Feature Cards Grid -->
           <div class="space-y-4">
             {/* Card 1: Enterprise RAG */}
-            <div class="p-4 rounded-2xl bg-gradient-to-r from-emerald-500/10 to-blue-500/10 border border-emerald-500/20 dark:border-emerald-400/20">
-              <div class="flex items-center gap-3">
-                <div class="p-2.5 rounded-xl bg-emerald-600 text-white shadow-md">
+            <div class="p-4.5 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-blue-500/5 to-transparent border border-emerald-500/20 dark:border-emerald-400/20 hover:border-emerald-500/40 transition-all group">
+              <div class="flex items-start gap-3.5">
+                <div class="p-3 rounded-xl bg-emerald-600 text-white shadow-md group-hover:scale-105 transition-transform">
                   <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-sm font-bold text-gray-900 dark:text-white">Retrieval-Augmented Generation</h4>
-                  <p class="text-xs text-gray-600 dark:text-gray-300 mt-0.5">Semantic Search, Vector DB Indexing & LLM Agents</p>
+                  <h4 class="text-sm font-bold text-gray-900 dark:text-white">Retrieval-Augmented Generation (RAG)</h4>
+                  <p class="text-xs text-gray-600 dark:text-gray-300 mt-1 leading-relaxed">Semantic Search, Vector DB Indexing (Chroma, Qdrant), Agentic Pipelines & LLM Integration</p>
                 </div>
               </div>
             </div>
 
             {/* Card 2: Full-Stack Architecture */}
-            <div class="p-4 rounded-2xl bg-gradient-to-r from-blue-500/10 to-indigo-500/10 border border-blue-500/20 dark:border-blue-400/20">
-              <div class="flex items-center gap-3">
-                <div class="p-2.5 rounded-xl bg-blue-600 text-white shadow-md">
+            <div class="p-4.5 rounded-2xl bg-gradient-to-r from-blue-500/10 via-indigo-500/5 to-transparent border border-blue-500/20 dark:border-blue-400/20 hover:border-blue-500/40 transition-all group">
+              <div class="flex items-start gap-3.5">
+                <div class="p-3 rounded-xl bg-blue-600 text-white shadow-md group-hover:scale-105 transition-transform">
                   <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" />
                   </svg>
                 </div>
                 <div>
                   <h4 class="text-sm font-bold text-gray-900 dark:text-white">Full-Stack Platform Engineering</h4>
-                  <p class="text-xs text-gray-600 dark:text-gray-300 mt-0.5">React 19, Astro v5, Node.js, Python & PHP/Laravel</p>
+                  <p class="text-xs text-gray-600 dark:text-gray-300 mt-1 leading-relaxed">React 19, Astro v5, TypeScript, Node.js, Python FastAPI & Modern PHP / Laravel Stack</p>
                 </div>
               </div>
             </div>
 
             {/* Card 3: Dynamic Data Pipelines */}
-            <div class="p-4 rounded-2xl bg-gradient-to-r from-amber-500/10 to-rose-500/10 border border-amber-500/20 dark:border-amber-400/20">
-              <div class="flex items-center gap-3">
-                <div class="p-2.5 rounded-xl bg-amber-600 text-white shadow-md">
+            <div class="p-4.5 rounded-2xl bg-gradient-to-r from-amber-500/10 via-rose-500/5 to-transparent border border-amber-500/20 dark:border-amber-400/20 hover:border-amber-500/40 transition-all group">
+              <div class="flex items-start gap-3.5">
+                <div class="p-3 rounded-xl bg-amber-600 text-white shadow-md group-hover:scale-105 transition-transform">
                   <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-sm font-bold text-gray-900 dark:text-white">Document & Form Generators</h4>
-                  <p class="text-xs text-gray-600 dark:text-gray-300 mt-0.5">WeasyPrint PDF, Jinja2 & Dynamic JSON Form Editors</p>
+                  <h4 class="text-sm font-bold text-gray-900 dark:text-white">Document & Dynamic Form Generators</h4>
+                  <p class="text-xs text-gray-600 dark:text-gray-300 mt-1 leading-relaxed">WeasyPrint PDF Engines, Jinja2 Templating, AkvoFormPrint & JSON Schema Editors</p>
                 </div>
               </div>
             </div>
@@ -110,11 +125,11 @@
                 AKVO
               </div>
               <div>
-                <p class="text-xs font-bold text-gray-900 dark:text-white">Primary Focus</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Enterprise AI & Scalable Web Apps</p>
+                <p class="text-xs font-bold text-gray-900 dark:text-white">Primary Organization</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Enterprise Web & RAG Systems</p>
               </div>
             </div>
-            <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+            <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 ring-1 ring-emerald-500/20">
               <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
               Active
             </span>
@@ -122,8 +137,8 @@
         </div>
 
         <!-- Ambient Glow Circles -->
-        <div class="absolute -top-6 -right-6 h-32 w-32 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute -bottom-6 -left-6 h-40 w-40 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -top-6 -right-6 h-36 w-36 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-6 -left-6 h-44 w-44 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
       </div>
 
     </div>
