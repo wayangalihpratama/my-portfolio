@@ -1,93 +1,163 @@
 {
+  "lastSynced": "2026-09-10T05:07:18.249Z",
   "projects": [
     {
       "id": "akvo-rag",
-      "name": "Akvo RAG System",
-      "description": "Core architecture for retrieval-augmented generation, enabling intelligent data-driven responses for global development platforms.",
-      "longDescription": "Built an enterprise Retrieval-Augmented Generation (RAG) pipeline enabling semantic vector search and LLM contextual synthesis across massive unstructured project datasets.",
+      "name": "Akvo Rag",
+      "description": "Enterprise solution built for AKVO.",
+      "longDescription": "Enterprise application development and engineering solution.",
       "achievements": [
         "Reduced query latency by 40% using vector indexing optimization",
         "Multi-modal doc parsing for PDFs, Excel, and structured JSON",
         "Integrated strict role-based data isolation"
       ],
-      "tags": ["Python", "LangChain", "OpenAI", "Vector DB"],
-      "link": "https://github.com/akvo/akvo-rag",
+      "tags": [
+        "Enterprise",
+        "Python",
+        "Full-Stack"
+      ],
+      "link": "#",
       "featured": true,
       "color": "green",
       "category": "AI & RAG"
     },
     {
       "id": "science-for-africa",
-      "name": "Science for Africa",
-      "description": "Full-stack developer on a high-impact collaboration platform for the Science for Africa Foundation, featuring complex OAuth integrations.",
-      "longDescription": "Developed key frontend features and OAuth authentication workflows for the Science for Africa Foundation platform, powering research collaboration across the continent.",
+      "name": "Science For Africa",
+      "description": "Enterprise solution built for SCIENCE.",
+      "longDescription": "Enterprise application development and engineering solution.",
       "achievements": [
         "Integrated multi-provider OAuth authentication",
         "Designed responsive research grant application workflows",
         "Optimized client-side rendering performance"
       ],
-      "tags": ["React", "Node.js", "OAuth", "GCP"],
-      "link": "https://github.com/akvo/science-for-africa",
+      "tags": [
+        "Enterprise",
+        "Python",
+        "Full-Stack"
+      ],
+      "link": "#",
       "featured": true,
       "color": "blue",
       "category": "Enterprise"
     },
     {
       "id": "akvo-form-print",
-      "name": "AkvoFormPrint",
-      "description": "A specialized Python tool for rendering modular forms into high-fidelity PDF or HTML using WeasyPrint and Jinja2.",
-      "longDescription": "Architected a high-fidelity PDF and HTML rendering engine designed to convert dynamic survey and monitoring forms into formatted printable reports.",
+      "name": "Akvo Form Print",
+      "description": "Enterprise solution built for AKVO.",
+      "longDescription": "Enterprise application development and engineering solution.",
       "achievements": [
         "Pixel-perfect Jinja2 HTML to WeasyPrint PDF conversion",
         "Supports dynamic page breaks, headers, footers, and images",
         "CLI & microservice wrapper for asynchronous job processing"
       ],
-      "tags": ["Python", "WeasyPrint", "Jinja2", "PDF"],
-      "link": "https://github.com/akvo/AkvoFormPrint-init",
+      "tags": [
+        "Enterprise",
+        "Python",
+        "Full-Stack"
+      ],
+      "link": "#",
       "featured": true,
       "color": "amber",
       "category": "Tools"
     },
     {
-      "id": "ag-mcp",
-      "name": "AgMCP",
-      "description": "Cutting-edge Agentic MCP tools and servers designed to enhance AI-to-system interactions and workflow automation.",
-      "longDescription": "Created custom Model Context Protocol (MCP) servers and toolkits enabling autonomous AI agents to safely execute command workflows and inspect system resources.",
+      "id": "my-portfolio",
+      "name": "my-portfolio",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/my-portfolio).",
       "achievements": [
-        "Standardized JSON-RPC 2.0 tool definitions for AI assistants",
-        "Implemented secure sandbox bounds for filesystem & process access"
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 9/10/2026"
       ],
-      "tags": ["TypeScript", "MCP", "AI Agents", "Node.js"],
-      "link": "https://github.com/wayangalihpratama/AgMCP",
+      "tags": [
+        "Astro"
+      ],
+      "link": "https://github.com/wayangalihpratama/my-portfolio",
+      "featured": false,
+      "color": "red",
+      "category": "Personal"
+    },
+    {
+      "id": "my-antigravity-pilot",
+      "name": "my-antigravity-pilot",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/my-antigravity-pilot).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 9/10/2026"
+      ],
+      "tags": [
+        "JavaScript"
+      ],
+      "link": "https://github.com/wayangalihpratama/my-antigravity-pilot",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "pacepals",
+      "name": "PacePals",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/PacePals).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 7/22/2026"
+      ],
+      "tags": [
+        "TypeScript"
+      ],
+      "link": "https://github.com/wayangalihpratama/PacePals",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "localrag-vision",
+      "name": "localRAG-vision",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/localRAG-vision).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 5/11/2026"
+      ],
+      "tags": [
+        "Python"
+      ],
+      "link": "https://github.com/wayangalihpratama/localRAG-vision",
       "featured": false,
       "color": "green",
       "category": "AI & RAG"
     },
     {
-      "id": "idh-idc",
-      "name": "IDH-IDC Platform",
-      "description": "Maintenance and feature development for large-scale data portals, ensuring data integrity and user-friendly reporting.",
-      "longDescription": "Maintained and expanded enterprise data portal features for IDH Sustainable Trade Initiative, handling multi-tenant reporting dashboards and data exports.",
+      "id": "general-siwins",
+      "name": "general-siwins",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/general-siwins).",
       "achievements": [
-        "Engineered automated data validation scripts in PHP & MySQL",
-        "Containerized legacy service environments with Docker Compose"
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 4/24/2026"
       ],
-      "tags": ["PHP", "Laravel", "MySQL", "Docker"],
-      "link": "#",
+      "tags": [
+        "Python"
+      ],
+      "link": "https://github.com/wayangalihpratama/general-siwins",
       "featured": false,
-      "color": "blue",
-      "category": "Enterprise"
+      "color": "amber",
+      "category": "Tools"
     },
     {
       "id": "autoffiliate",
-      "name": "Autoffiliate",
-      "description": "Automation tools for affiliate marketing, streamlining link management and performance tracking via Python.",
-      "longDescription": "Built automated web scraping and link processing bots for affiliate marketing campaigns, automating daily tracking and reporting.",
+      "name": "autoffiliate",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/autoffiliate).",
       "achievements": [
-        "Automated multi-platform affiliate link generation",
-        "Built daily summary report notifications"
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 4/24/2026"
       ],
-      "tags": ["Python", "Automation", "Web Scraping"],
+      "tags": [
+        "Python"
+      ],
       "link": "https://github.com/wayangalihpratama/autoffiliate",
       "featured": false,
       "color": "amber",
@@ -95,33 +165,432 @@
     },
     {
       "id": "dawn-dash",
-      "name": "Dawn Dash",
-      "description": "High-performance personal analytics dashboard for real-time visualization of professional and personal milestones.",
-      "longDescription": "Designed a sleek personal metrics dashboard combining project productivity stats and habit tracking with modern UI animations.",
+      "name": "dawn-dash",
+      "description": "Dawn Dash",
+      "longDescription": "Dawn Dash (Synced directly from GitHub repository wayangalihpratama/dawn-dash).",
       "achievements": [
-        "Pre-rendered static Astro pages with client-side dynamic widgets",
-        "Achieved 100/100 Lighthouse performance score"
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 4/23/2026"
       ],
-      "tags": ["Astro", "Tailwind CSS", "Analytics"],
+      "tags": [
+        "Python"
+      ],
       "link": "https://github.com/wayangalihpratama/dawn-dash",
       "featured": false,
       "color": "red",
       "category": "Personal"
     },
     {
-      "id": "rag-knowledge-system",
-      "name": "RAG Knowledge System",
-      "description": "Intelligent retrieval-augmented generation system that bridges vast knowledge bases with contextual AI responses.",
-      "longDescription": "Built modular chunking, embedding, and re-ranking pipelines for domain-specific technical documentation search.",
+      "id": "learn-strapi-nextjs",
+      "name": "learn-strapi-nextjs",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/learn-strapi-nextjs).",
       "achievements": [
-        "Integrated semantic hybrid search (sparse + dense vectors)",
-        "Zero-latency streaming responses with token optimization"
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 3/5/2026"
       ],
-      "tags": ["Python", "LangChain", "Vector DB", "RAG"],
-      "link": "#",
+      "tags": [
+        "JavaScript"
+      ],
+      "link": "https://github.com/wayangalihpratama/learn-strapi-nextjs",
+      "featured": false,
+      "color": "red",
+      "category": "Personal"
+    },
+    {
+      "id": "aswa-rmi",
+      "name": "aswa-rmi",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/aswa-rmi).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 2/19/2026"
+      ],
+      "tags": [
+        "Python"
+      ],
+      "link": "https://github.com/wayangalihpratama/aswa-rmi",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "laravelapp-skeleton",
+      "name": "laravelapp-skeleton",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/laravelapp-skeleton).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 2/18/2026"
+      ],
+      "tags": [
+        "PHP"
+      ],
+      "link": "https://github.com/wayangalihpratama/laravelapp-skeleton",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "test-antigravity",
+      "name": "test-antigravity",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/test-antigravity).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 2/12/2026"
+      ],
+      "tags": [
+        "PHP"
+      ],
+      "link": "https://github.com/wayangalihpratama/test-antigravity",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "remote-mcp-server-authless",
+      "name": "remote-mcp-server-authless",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/remote-mcp-server-authless).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 1/7/2026"
+      ],
+      "tags": [
+        "TypeScript"
+      ],
+      "link": "https://github.com/wayangalihpratama/remote-mcp-server-authless",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "gis-generic-app",
+      "name": "gis-generic-app",
+      "description": "GIS app with general purpose. But currently used for a tourism spots.",
+      "longDescription": "GIS app with general purpose. But currently used for a tourism spots. (Synced directly from GitHub repository wayangalihpratama/gis-generic-app).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 7/16/2025"
+      ],
+      "tags": [
+        "Dockerfile"
+      ],
+      "link": "https://github.com/wayangalihpratama/gis-generic-app",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "learn-multimodal-rag",
+      "name": "learn-multimodal-rag",
+      "description": "To learn concept of multimodal rag",
+      "longDescription": "To learn concept of multimodal rag (Synced directly from GitHub repository wayangalihpratama/learn-multimodal-rag).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 7/8/2025"
+      ],
+      "tags": [
+        "Python",
+        "image-rag",
+        "multimodal"
+      ],
+      "link": "https://github.com/wayangalihpratama/learn-multimodal-rag",
       "featured": false,
       "color": "green",
       "category": "AI & RAG"
+    },
+    {
+      "id": "laravel-chat-app",
+      "name": "laravel-chat-app",
+      "description": "Create an live chat app using laravel",
+      "longDescription": "Create an live chat app using laravel (Synced directly from GitHub repository wayangalihpratama/laravel-chat-app).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 3/20/2025"
+      ],
+      "tags": [
+        "Blade"
+      ],
+      "link": "https://github.com/wayangalihpratama/laravel-chat-app",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "roomie",
+      "name": "roomie",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/roomie).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 12/27/2024"
+      ],
+      "tags": [
+        "Python"
+      ],
+      "link": "https://github.com/wayangalihpratama/roomie",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "learn-next-js-14",
+      "name": "learn-next-js-14",
+      "description": "Learning NextJS 14 from scratch",
+      "longDescription": "Learning NextJS 14 from scratch (Synced directly from GitHub repository wayangalihpratama/learn-next-js-14).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 11/22/2024"
+      ],
+      "tags": [
+        "JavaScript"
+      ],
+      "link": "https://github.com/wayangalihpratama/learn-next-js-14",
+      "featured": false,
+      "color": "red",
+      "category": "Personal"
+    },
+    {
+      "id": "wgprtm-gspread",
+      "name": "wgprtm-gspread",
+      "description": "Learning Google Sheets API with gpread",
+      "longDescription": "Learning Google Sheets API with gpread (Synced directly from GitHub repository wayangalihpratama/wgprtm-gspread).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 10/9/2024"
+      ],
+      "tags": [
+        "Python"
+      ],
+      "link": "https://github.com/wayangalihpratama/wgprtm-gspread",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "pytorch-ai-chatbot",
+      "name": "pytorch-ai-chatbot",
+      "description": "Learning from this YouTube tutorial: https://www.youtube.com/watch?v=NoHtQiwoanA",
+      "longDescription": "Learning from this YouTube tutorial: https://www.youtube.com/watch?v=NoHtQiwoanA (Synced directly from GitHub repository wayangalihpratama/pytorch-ai-chatbot).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 7/24/2024"
+      ],
+      "tags": [
+        "Shell"
+      ],
+      "link": "https://github.com/wayangalihpratama/pytorch-ai-chatbot",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "learn-ollama",
+      "name": "learn-ollama",
+      "description": "Learning Ollama",
+      "longDescription": "Learning Ollama (Synced directly from GitHub repository wayangalihpratama/learn-ollama).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 5/16/2024"
+      ],
+      "tags": [
+        "Python"
+      ],
+      "link": "https://github.com/wayangalihpratama/learn-ollama",
+      "featured": false,
+      "color": "red",
+      "category": "Personal"
+    },
+    {
+      "id": "learning-bash",
+      "name": "learning-bash",
+      "description": "Learn bash script",
+      "longDescription": "Learn bash script (Synced directly from GitHub repository wayangalihpratama/learning-bash).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 12/13/2022"
+      ],
+      "tags": [
+        "Shell"
+      ],
+      "link": "https://github.com/wayangalihpratama/learning-bash",
+      "featured": false,
+      "color": "red",
+      "category": "Personal"
+    },
+    {
+      "id": "flow-seed-monitoring-survey",
+      "name": "flow-seed-monitoring-survey",
+      "description": "To exploring seed monitoring datapoint to local db",
+      "longDescription": "To exploring seed monitoring datapoint to local db (Synced directly from GitHub repository wayangalihpratama/flow-seed-monitoring-survey).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 11/16/2022"
+      ],
+      "tags": [
+        "Python"
+      ],
+      "link": "https://github.com/wayangalihpratama/flow-seed-monitoring-survey",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "ionic-react",
+      "name": "ionic-react",
+      "description": "Try to build hybrid app using ionic and react js",
+      "longDescription": "Try to build hybrid app using ionic and react js (Synced directly from GitHub repository wayangalihpratama/ionic-react).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 11/9/2022"
+      ],
+      "tags": [
+        "TypeScript"
+      ],
+      "link": "https://github.com/wayangalihpratama/ionic-react",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "cordova-react-manual",
+      "name": "cordova-react-manual",
+      "description": "Try cordova with react app without reco cli",
+      "longDescription": "Try cordova with react app without reco cli (Synced directly from GitHub repository wayangalihpratama/cordova-react-manual).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 11/9/2022"
+      ],
+      "tags": [
+        "JavaScript"
+      ],
+      "link": "https://github.com/wayangalihpratama/cordova-react-manual",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "reco-react_cordova",
+      "name": "reco-react_cordova",
+      "description": "Trying RECO cli to build an android app",
+      "longDescription": "Trying RECO cli to build an android app (Synced directly from GitHub repository wayangalihpratama/reco-react_cordova).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 11/9/2022"
+      ],
+      "tags": [
+        "HTML"
+      ],
+      "link": "https://github.com/wayangalihpratama/reco-react_cordova",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "pern",
+      "name": "pern",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/pern).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 10/25/2022"
+      ],
+      "tags": [
+        "JavaScript"
+      ],
+      "link": "https://github.com/wayangalihpratama/pern",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "react-testing-course",
+      "name": "react-testing-course",
+      "description": "For learning purpose",
+      "longDescription": "For learning purpose (Synced directly from GitHub repository wayangalihpratama/react-testing-course).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 8/25/2022"
+      ],
+      "tags": [
+        "JavaScript"
+      ],
+      "link": "https://github.com/wayangalihpratama/react-testing-course",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "poc-gsheets-api",
+      "name": "poc-gsheets-api",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/poc-gsheets-api).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 8/2/2022"
+      ],
+      "tags": [
+        "Python"
+      ],
+      "link": "https://github.com/wayangalihpratama/poc-gsheets-api",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "react-hooks-antd",
+      "name": "react-hooks-antd",
+      "description": "Learning deeper about react hooks and antd design",
+      "longDescription": "Learning deeper about react hooks and antd design (Synced directly from GitHub repository wayangalihpratama/react-hooks-antd).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 5/5/2021"
+      ],
+      "tags": [
+        "JavaScript"
+      ],
+      "link": "https://github.com/wayangalihpratama/react-hooks-antd",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "plant-map",
+      "name": "plant-map",
+      "description": "Public GitHub repository project.",
+      "longDescription": "Open-source software project hosted on GitHub (wayangalihpratama/plant-map).",
+      "achievements": [
+        "⭐ Stars: 0 | 🍴 Forks: 0",
+        "Updated: 4/23/2020"
+      ],
+      "tags": [
+        "HTML"
+      ],
+      "link": "https://github.com/wayangalihpratama/plant-map",
+      "featured": false,
+      "color": "amber",
+      "category": "Tools"
+    },
+    {
+      "id": "idh-idc",
+      "name": "Idh Idc",
+      "description": "Enterprise solution built for IDH.",
+      "longDescription": "Enterprise application development and engineering solution.",
+      "achievements": [
+        "Engineered automated data validation scripts in PHP & MySQL",
+        "Containerized legacy service environments with Docker Compose"
+      ],
+      "tags": [
+        "Enterprise",
+        "Python",
+        "Full-Stack"
+      ],
+      "link": "#",
+      "featured": false,
+      "color": "blue",
+      "category": "Enterprise"
     }
   ]
 }
