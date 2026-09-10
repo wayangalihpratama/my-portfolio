@@ -10,7 +10,7 @@ const CURATED_OVERLAY = {
     description: "Core architecture for retrieval-augmented generation, enabling intelligent data-driven responses for global development platforms.",
     longDescription: "Built an enterprise Retrieval-Augmented Generation (RAG) pipeline enabling semantic vector search and LLM contextual synthesis across massive unstructured project datasets.",
     link: "https://github.com/akvo/akvo-rag",
-    category: "AI & RAG",
+    category: "Akvo Projects",
     color: "green",
     featured: true,
     achievements: [
@@ -24,8 +24,8 @@ const CURATED_OVERLAY = {
     description: "A specialized Python tool for rendering modular forms into high-fidelity PDF or HTML using WeasyPrint and Jinja2.",
     longDescription: "Architected a high-fidelity PDF and HTML rendering engine designed to convert dynamic survey and monitoring forms into formatted printable reports.",
     link: "https://github.com/akvo/AkvoFormPrint-init",
-    category: "Tools",
-    color: "amber",
+    category: "Akvo Projects",
+    color: "green",
     featured: true,
     achievements: [
       "Pixel-perfect Jinja2 HTML to WeasyPrint PDF conversion",
@@ -38,7 +38,7 @@ const CURATED_OVERLAY = {
     description: "Modular drag-and-drop form builder component library for designing complex dynamic survey forms.",
     longDescription: "Engineered a React-based interactive form builder enabling non-technical users to build complex logic flows, question groups, and validation rules.",
     link: "https://github.com/akvo/akvo-react-form-editor",
-    category: "Enterprise",
+    category: "Akvo Projects",
     color: "blue",
     featured: true,
     achievements: [
@@ -52,7 +52,7 @@ const CURATED_OVERLAY = {
     description: "High-performance React form rendering engine for executing dynamic survey questionnaires with offline storage support.",
     longDescription: "Core frontend form runtime component that parses JSON form schemas and renders interactive responsive inputs with client-side validation.",
     link: "https://github.com/akvo/akvo-react-form",
-    category: "Enterprise",
+    category: "Akvo Projects",
     color: "blue",
     featured: true,
     achievements: [
@@ -65,7 +65,7 @@ const CURATED_OVERLAY = {
     description: "Maintenance and feature development for large-scale data portals, ensuring data integrity and user-friendly reporting.",
     longDescription: "Maintained and expanded enterprise data portal features for IDH Sustainable Trade Initiative, handling multi-tenant reporting dashboards and data exports.",
     link: "https://github.com/akvo/idh-idc",
-    category: "Enterprise",
+    category: "Akvo Projects",
     color: "blue",
     featured: true,
     achievements: [
@@ -78,7 +78,7 @@ const CURATED_OVERLAY = {
     description: "High-impact collaboration platform for the Science for Africa Foundation, featuring complex OAuth integrations.",
     longDescription: "Developed key frontend features and OAuth authentication workflows for the Science for Africa Foundation platform, powering research collaboration across the continent.",
     link: "https://github.com/akvo/science-for-africa",
-    category: "Enterprise",
+    category: "Akvo Projects",
     color: "blue",
     featured: false,
     achievements: [
@@ -91,8 +91,8 @@ const CURATED_OVERLAY = {
     name: "AgMCP",
     description: "Agentic Model Context Protocol (MCP) servers and tools for autonomous AI agent workflows.",
     longDescription: "Created custom Model Context Protocol (MCP) servers and toolkits enabling autonomous AI agents to safely execute command workflows and inspect system resources.",
-    category: "AI & RAG",
-    color: "green",
+    category: "Personal Projects",
+    color: "amber",
     featured: false,
     achievements: [
       "Standardized JSON-RPC 2.0 tool definitions for AI assistants",
@@ -103,8 +103,8 @@ const CURATED_OVERLAY = {
     name: "LocalRAG Vision",
     description: "Privacy-first multimodal retrieval-augmented generation pipeline using local vision LLMs.",
     longDescription: "Local RAG pipeline capable of performing semantic search and contextual visual QA over image and document collections.",
-    category: "AI & RAG",
-    color: "green",
+    category: "Personal Projects",
+    color: "amber",
     featured: false,
     achievements: [
       "Local multimodal vector embeddings and document parsing",
@@ -116,26 +116,18 @@ const CURATED_OVERLAY = {
 function inferCategory(repo) {
   const name = repo.name.toLowerCase();
   const desc = (repo.description || '').toLowerCase();
-  const topics = repo.topics || [];
 
-  if (topics.includes('rag') || topics.includes('ai') || name.includes('rag') || desc.includes('rag') || desc.includes('ai')) {
-    return 'AI & RAG';
+  if (name.includes('akvo') || desc.includes('akvo') || name.includes('idh-idc') || name.includes('science-for-africa')) {
+    return 'Akvo Projects';
   }
-  if (topics.includes('tool') || name.includes('cli') || desc.includes('tool') || name.includes('mcp')) {
-    return 'Tools';
-  }
-  if (name.includes('dash') || name.includes('portfolio') || name.includes('learn')) {
-    return 'Personal';
-  }
-  return 'Tools';
+  return 'Personal Projects';
 }
 
 function inferColor(category) {
   switch (category) {
-    case 'AI & RAG': return 'green';
-    case 'Enterprise': return 'blue';
-    case 'Tools': return 'amber';
-    default: return 'red';
+    case 'Akvo Projects': return 'blue';
+    case 'Personal Projects': return 'amber';
+    default: return 'green';
   }
 }
 

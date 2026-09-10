@@ -19,7 +19,7 @@ interface ProjectGridProps {
   initialProjects: Project[];
 }
 
-const categories = ["All", "AI & RAG", "Enterprise", "Tools", "Personal"];
+const categories = ["All", "Akvo Projects", "Personal Projects"];
 
 const ProjectGrid: React.FC<ProjectGridProps> = ({ initialProjects }) => {
   const [activeCategory, setActiveCategory] = useState("All");
