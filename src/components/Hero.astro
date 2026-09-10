@@ -4,71 +4,71 @@ const resumeLink = import.meta.env.BASE_URL + "/Galih-Pratama-CV.pdf";
 const profilePic = import.meta.env.BASE_URL + "/profile.png";
 ---
 
-<section class="relative isolate overflow-hidden dark:bg-gray-900">
-  <!-- Background gradient - Blue and Green -->
+<section id="hero" class="relative isolate overflow-hidden dark:bg-gray-900">
+  <!-- Background gradient - Ambient Blur -->
   <div
-    class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+    class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80 pointer-events-none"
     aria-hidden="true"
   >
     <div
-      class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-600 to-green-600 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] dark:opacity-30"
+      class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-600 via-indigo-500 to-emerald-500 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] dark:opacity-30"
       style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
     >
     </div>
   </div>
 
-  <div class="py-24 sm:py-32 lg:py-40">
+  <div class="py-24 sm:py-32 lg:py-36">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-12 lg:items-center">
         <!-- Text Content -->
         <div class="lg:col-span-7">
+          <!-- Animated Live Status Pulse -->
           <div
-            class="inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold text-green-700 ring-1 ring-inset ring-green-600/20 dark:text-green-400 dark:ring-green-400/30 mb-8"
+            class="inline-flex items-center gap-2.5 rounded-full px-4 py-1.5 text-xs font-semibold backdrop-blur-md bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 ring-1 ring-inset ring-emerald-500/30 mb-8 shadow-sm"
           >
-            👋 Currently not available for new opportunities
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            </span>
+            Available for Select Advisory & Enterprise RAG Projects
           </div>
 
           <h1
-            class="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl dark:text-white"
+            class="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl dark:text-white"
           >
             Hi, I'm <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600 dark:from-blue-400 dark:to-green-400"
+              class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-500 to-emerald-500 dark:from-blue-400 dark:via-indigo-400 dark:to-emerald-400"
               >Wayan Galih Pratama</span
             >
           </h1>
 
           <p
-            class="mt-6 text-xl leading-8 text-gray-700 dark:text-gray-300 font-medium"
+            class="mt-6 text-xl leading-8 text-gray-800 dark:text-gray-200 font-semibold"
           >
-            Fullstack Developer @ Akvo 🌍
+            Full-Stack & RAG AI Systems Engineer @ Akvo 🌍
           </p>
 
-          <p class="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-400">
-            Building intelligent web applications at the intersection of
-            traditional technologies and modern AI. Currently exploring RAG
-            development and bridging the gap between vast knowledge bases and
-            intelligent responses.
+          <p class="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-400 max-w-2xl">
+            Architecting high-performance web applications and enterprise retrieval-augmented generation (RAG) pipelines. Bridging complex multi-modal data with intelligent AI workflows.
           </p>
 
-          <!-- Quick Facts -->
-          <div
-            class="mt-8 flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400"
-          >
-            <div class="flex items-center gap-2">
-              <span class="text-2xl">🔭</span>
-              <span>RAG Integration</span>
+          <!-- Bento Quick Stats Grid -->
+          <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
+            <div class="p-3.5 rounded-xl bg-gray-50/80 dark:bg-gray-800/60 border border-gray-200/80 dark:border-gray-700/60 backdrop-blur-sm">
+              <p class="text-xs text-gray-500 dark:text-gray-400 font-medium">GitHub Repos</p>
+              <p class="text-base font-bold text-gray-900 dark:text-white mt-0.5">35+ Synced</p>
             </div>
-            <div class="flex items-center gap-2">
-              <span class="text-2xl">🎵</span>
-              <span>Balinese Music</span>
+            <div class="p-3.5 rounded-xl bg-gray-50/80 dark:bg-gray-800/60 border border-gray-200/80 dark:border-gray-700/60 backdrop-blur-sm">
+              <p class="text-xs text-gray-500 dark:text-gray-400 font-medium">Specialization</p>
+              <p class="text-base font-bold text-gray-900 dark:text-white mt-0.5">RAG & AI Tools</p>
             </div>
-            <div class="flex items-center gap-2">
-              <span class="text-2xl">✈️</span>
-              <span>Travel Enthusiast</span>
+            <div class="p-3.5 rounded-xl bg-gray-50/80 dark:bg-gray-800/60 border border-gray-200/80 dark:border-gray-700/60 backdrop-blur-sm">
+              <p class="text-xs text-gray-500 dark:text-gray-400 font-medium">Interests</p>
+              <p class="text-base font-bold text-gray-900 dark:text-white mt-0.5">Balinese Music 🎵</p>
             </div>
-            <div class="flex items-center gap-2">
-              <span class="text-2xl">🏝️</span>
-              <span>Based in Indonesia</span>
+            <div class="p-3.5 rounded-xl bg-gray-50/80 dark:bg-gray-800/60 border border-gray-200/80 dark:border-gray-700/60 backdrop-blur-sm">
+              <p class="text-xs text-gray-500 dark:text-gray-400 font-medium">Location</p>
+              <p class="text-base font-bold text-gray-900 dark:text-white mt-0.5">Indonesia 🏝️</p>
             </div>
           </div>
 
@@ -76,93 +76,77 @@ const profilePic = import.meta.env.BASE_URL + "/profile.png";
           <div class="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="#projects"
-              class="rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all hover:scale-105"
+              class="rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 hover:bg-blue-500 transition-all hover:scale-105"
             >
-              View Projects
+              Explore Projects &rarr;
             </a>
             <a
               href={resumeLink}
-              class="rounded-lg px-6 py-3 text-sm font-semibold text-gray-900 dark:text-white ring-1 ring-inset ring-gray-300 dark:ring-gray-700 hover:ring-blue-600 dark:hover:ring-blue-400 transition-all hover:scale-105"
+              target="_blank"
+              class="rounded-xl px-6 py-3.5 text-sm font-semibold text-gray-900 dark:text-white ring-1 ring-inset ring-gray-300 dark:ring-gray-700 hover:ring-blue-600 dark:hover:ring-blue-400 backdrop-blur-sm bg-white/50 dark:bg-gray-800/50 transition-all hover:scale-105 flex items-center gap-2"
             >
-              Download CV <span aria-hidden="true">→</span>
+              Download CV
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
             </a>
             <a
               href="#contact"
-              class="text-sm font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              class="text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors ml-2"
             >
-              Get in touch <span aria-hidden="true">→</span>
+              Direct Email &rarr;
             </a>
           </div>
         </div>
 
-        <!-- Profile Image/Visual -->
+        <!-- Glassmorphism Profile Avatar Card -->
         <div class="lg:col-span-5 mt-16 lg:mt-0">
           <div class="relative">
-            <!-- Animated background circles - Blue and Green -->
-            <div class="absolute inset-0 -z-10">
+            <!-- Ambient Glow Circles -->
+            <div class="absolute inset-0 -z-10 pointer-events-none">
               <div
-                class="absolute top-1/4 left-1/4 h-72 w-72 rounded-full bg-blue-400/20 blur-3xl animate-pulse"
+                class="absolute top-1/4 left-1/4 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl animate-pulse"
               >
               </div>
               <div
-                class="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-green-400/20 blur-3xl animate-pulse"
-                style="animation-delay: 1s;"
+                class="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-emerald-500/20 blur-3xl animate-pulse"
+                style="animation-delay: 1.5s;"
               >
               </div>
             </div>
 
-            <!-- Profile card -->
+            <!-- Glass Card Container -->
             <div class="relative mx-auto max-w-md">
               <div
-                class="rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-2xl ring-1 ring-gray-200 dark:ring-gray-700"
+                class="rounded-3xl backdrop-blur-xl bg-white/70 dark:bg-gray-800/70 p-8 shadow-2xl ring-1 ring-white/50 dark:ring-white/10 border border-gray-200/50 dark:border-gray-700/50 transition-all hover:shadow-blue-500/10"
               >
-                <!-- Avatar placeholder - Blue to Green gradient -->
+                <!-- Avatar Circle with Glowing Ring -->
                 <div
-                  class="mx-auto h-96 w-96 rounded-full bg-gradient-to-br from-blue-500 to-green-600 flex items-center justify-center text-white text-6xl font-bold shadow-lg"
+                  class="mx-auto h-72 w-72 sm:h-80 sm:w-80 rounded-full bg-gradient-to-br from-blue-500 to-emerald-500 p-1.5 shadow-xl transition-transform duration-500 hover:scale-105"
                 >
                   <img
                     src={profilePic}
-                    alt="galih profile pic"
-                    class="object-cover object-center w-full rounded-full"
+                    alt="Wayan Galih Pratama Profile Picture"
+                    class="object-cover object-center w-full h-full rounded-full bg-gray-900 border-2 border-white dark:border-gray-800"
                   />
                 </div>
 
-                <!-- Tech stack badges - Using Blue, Green, Brown, and Red -->
+                <!-- Tech Stack Badges -->
                 <div class="mt-8 flex flex-wrap gap-2 justify-center">
-                  <span
-                    class="inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300"
-                  >
-                    React
+                  <span class="inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-950/60 px-3 py-1 text-xs font-semibold text-blue-700 dark:text-blue-300 ring-1 ring-blue-500/20">
+                    React 19
                   </span>
-                  <span
-                    class="inline-flex items-center rounded-full bg-green-50 dark:bg-green-900/30 px-3 py-1 text-xs font-medium text-green-700 dark:text-green-300"
-                  >
+                  <span class="inline-flex items-center rounded-full bg-emerald-50 dark:bg-emerald-950/60 px-3 py-1 text-xs font-semibold text-emerald-700 dark:text-emerald-300 ring-1 ring-emerald-500/20">
+                    Python RAG
+                  </span>
+                  <span class="inline-flex items-center rounded-full bg-indigo-50 dark:bg-indigo-950/60 px-3 py-1 text-xs font-semibold text-indigo-700 dark:text-indigo-300 ring-1 ring-indigo-500/20">
+                    Astro v5
+                  </span>
+                  <span class="inline-flex items-center rounded-full bg-amber-50 dark:bg-amber-950/60 px-3 py-1 text-xs font-semibold text-amber-800 dark:text-amber-300 ring-1 ring-amber-500/20">
+                    Agentic MCP
+                  </span>
+                  <span class="inline-flex items-center rounded-full bg-purple-50 dark:bg-purple-950/60 px-3 py-1 text-xs font-semibold text-purple-700 dark:text-purple-300 ring-1 ring-purple-500/20">
                     Node.js
-                  </span>
-                  <span
-                    class="inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300"
-                  >
-                    Astro
-                  </span>
-                  <span
-                    class="inline-flex items-center rounded-full bg-red-50 dark:bg-red-900/30 px-3 py-1 text-xs font-medium text-red-700 dark:text-red-300"
-                  >
-                    RAG/AI
-                  </span>
-                  <span
-                    class="inline-flex items-center rounded-full bg-green-50 dark:bg-green-900/30 px-3 py-1 text-xs font-medium text-green-700 dark:text-green-300"
-                  >
-                    Python
-                  </span>
-                  <span
-                    class="inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300"
-                  >
-                    PHP
-                  </span>
-                  <span
-                    class="inline-flex items-center rounded-full bg-amber-50 dark:bg-amber-900/30 px-3 py-1 text-xs font-medium text-amber-800 dark:text-amber-300"
-                  >
-                    LLMs
                   </span>
                 </div>
               </div>
@@ -172,16 +156,5 @@ const profilePic = import.meta.env.BASE_URL + "/profile.png";
       </div>
     </div>
   </div>
-
-  <!-- Bottom gradient - Green and Blue -->
-  <div
-    class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-    aria-hidden="true"
-  >
-    <div
-      class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-green-600 to-blue-600 opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem] dark:opacity-30"
-      style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-    >
-    </div>
-  </div>
 </section>
+
